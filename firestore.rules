@@ -1,0 +1,20 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function signedIn() { return request.auth != null; }
+    // A teacher's classes: classes they own, plus classes/{uid} (their class from before multiple classes).
+    function owns(cls) {
+      return signedIn() && (cls == request.auth.uid || get(/databases/$(database)/documents/classes/$(cls)).data.owner == request.auth.uid);
+    }
+    match /classes/{cls} {
+      allow read, delete: if signedIn() && (cls == request.auth.uid || resource.data.owner == request.auth.uid);
+      // ...and a class can't be handed to someone else: after any change the owner is still this teacher.
+      allow update: if signedIn() && (cls == request.auth.uid || resource.data.owner == request.auth.uid)
+        && request.resource.data.get('owner', request.auth.uid) == request.auth.uid;
+      allow create: if signedIn() && request.resource.data.owner == request.auth.uid;
+    }
+    match /classes/{cls}/learners/{learner} {
+      allow read, write: if owns(cls);
+    }
+  }
+}

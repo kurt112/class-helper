@@ -1,0 +1,53 @@
+@import 'tailwindcss';
+@import '@fontsource/atkinson-hyperlegible/400.css';
+@import '@fontsource/atkinson-hyperlegible/700.css';
+
+@theme {
+  --font-sans: 'Atkinson Hyperlegible', ui-sans-serif, system-ui, sans-serif;
+  --color-paper: #fafbf9;
+  --color-card: #ffffff;
+  --color-ink: #1d2a27;
+  --color-muted: #5b6b66;
+  --color-line: #dce3df;
+  --color-board: #2f6b5a;
+  --color-board-dark: #234f43;
+  --color-board-soft: #e6efeb;
+  --color-danger: #b4352b;
+  --color-on-board: #ffffff;
+}
+
+/* Dark mode follows the device setting. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-paper: #111715;
+    --color-card: #19211f;
+    --color-ink: #e3ebe7;
+    --color-muted: #98aaa3;
+    --color-line: #2b3733;
+    --color-board: #6cc0a5;
+    --color-board-dark: #9bd8c4;
+    --color-board-soft: #1e3a31;
+    --color-danger: #f08a7e;
+    --color-on-board: #0e1513;
+  }
+}
+
+@layer base {
+  html { color-scheme: light dark; }
+  body { @apply bg-paper font-sans text-ink antialiased; }
+  :focus-visible { @apply outline-2 outline-offset-2 outline-board; }
+  /* Compact selects with a slim chevron instead of the bulky native arrow. */
+  select:where(.field) {
+    appearance: none;
+    padding-right: 2rem;
+    background: var(--color-card) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2398aaa3' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m6 9 6 6 6-6'/%3E%3C/svg%3E") no-repeat right 0.6rem center / 14px;
+  }
+}
+
+@utility field { @apply block h-9 w-full rounded-lg border border-line bg-card px-3 py-1.5 text-sm text-ink shadow-xs placeholder:text-muted/70 focus:border-board focus:outline-none focus:ring-3 focus:ring-board/15; }
+@utility label { @apply mb-1.5 block text-[13px] font-bold text-muted; }
+@utility btn { @apply inline-flex h-9 items-center justify-center gap-2 rounded-lg px-3.5 text-sm font-bold whitespace-nowrap transition-colors disabled:opacity-40; }
+@utility btn-primary { @apply btn bg-board text-on-board shadow-xs hover:bg-board-dark; }
+@utility btn-ghost { @apply btn border border-line bg-card text-ink shadow-xs hover:bg-board-soft; }
+@utility section { @apply rounded-xl border border-line bg-card shadow-xs; }
+@utility section-head { @apply flex items-baseline justify-between gap-4 border-b border-line px-5 py-3; }

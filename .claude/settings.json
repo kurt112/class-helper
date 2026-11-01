@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude-in-chrome__tabs_context_mcp",
+      "ClaudeInChromeDomain(localhost:5179)",
+      "ClaudeInChromeDomain(docs.google.com)",
+      "ClaudeInChromeDomain(localhost:5180)",
+      "ClaudeInChromeDomain(localhost:5178)",
+      "ClaudeInChromeDomain(console.firebase.google.com)"
+    ]
+  }
+}

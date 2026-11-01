@@ -1,0 +1,5376 @@
+{
+  "skills": {
+    "L": "Listening",
+    "S": "Speaking",
+    "R": "Reading",
+    "W": "Copying and Guided Writing"
+  },
+  "subjects": [
+    {
+      "id": "RL",
+      "name": "Reading and Literacy",
+      "items": [
+        {
+          "id": "RL-19L",
+          "strand": "Phonological Awareness (oracy for literacy)",
+          "no": "1",
+          "text": "Chant rhymes and poems.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              9
+            ]
+          }
+        },
+        {
+          "id": "RL-20L",
+          "strand": "Phonological Awareness (oracy for literacy)",
+          "no": "1",
+          "text": "Chant rhymes and poems.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              10
+            ]
+          }
+        },
+        {
+          "id": "RL-21L",
+          "strand": "Phonological Awareness (oracy for literacy)",
+          "no": "2",
+          "text": "Segment a two or three syllable word into its syllabic parts.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              11
+            ]
+          }
+        },
+        {
+          "id": "RL-22L",
+          "strand": "Phonological Awareness (oracy for literacy)",
+          "no": "2",
+          "text": "Segment a two or three syllable word into its syllabic parts.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              12
+            ]
+          }
+        },
+        {
+          "id": "RL-23L",
+          "strand": "Phonological Awareness (oracy for literacy)",
+          "no": "3",
+          "text": "Identify rhyming words in nursery rhymes, poems, and chants.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              13
+            ]
+          }
+        },
+        {
+          "id": "RL-24L",
+          "strand": "Phonological Awareness (oracy for literacy)",
+          "no": "3",
+          "text": "Identify rhyming words in nursery rhymes, poems, and chants.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              14
+            ]
+          }
+        },
+        {
+          "id": "RL-25L",
+          "strand": "Phonological Awareness (oracy for literacy)",
+          "no": "4",
+          "text": "Say two or three words that rhyme.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              15
+            ]
+          }
+        },
+        {
+          "id": "RL-26L",
+          "strand": "Phonological Awareness (oracy for literacy)",
+          "no": "4",
+          "text": "Say two or three words that rhyme.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              16
+            ]
+          }
+        },
+        {
+          "id": "RL-27L",
+          "strand": "Phonological Awareness (oracy for literacy)",
+          "no": "5",
+          "text": "Identify initial sounds ((vowels, consonants, and semi-vowels, if any.)",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              17
+            ]
+          }
+        },
+        {
+          "id": "RL-28L",
+          "strand": "Phonological Awareness (oracy for literacy)",
+          "no": "5",
+          "text": "Identify initial sounds ((vowels, consonants, and semi-vowels, if any.)",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              18
+            ]
+          }
+        },
+        {
+          "id": "RL-30L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "6",
+          "text": "Produce the sound of letters of L1.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              19
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              19
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              19
+            ]
+          }
+        },
+        {
+          "id": "RL-31L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "6",
+          "text": "Produce the sound of letters of L1.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              20
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              20
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              20
+            ]
+          }
+        },
+        {
+          "id": "RL-32L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "6",
+          "text": "Produce the sound of letters of L1.",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              21
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              21
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              21
+            ]
+          }
+        },
+        {
+          "id": "RL-33L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "7",
+          "text": "Identify the letters in L1.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              22
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              22
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              22
+            ]
+          }
+        },
+        {
+          "id": "RL-34L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "7",
+          "text": "Identify the letters in L1.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              23
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              23
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              23
+            ]
+          }
+        },
+        {
+          "id": "RL-35L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "7",
+          "text": "Identify the letters in L1.",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              24
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              24
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              24
+            ]
+          }
+        },
+        {
+          "id": "RL-36L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "8",
+          "text": "Isolate sounda (consonants and vowels) in a word (beginning and/or ending).",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              25
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              25
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              25
+            ]
+          }
+        },
+        {
+          "id": "RL-37L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "8",
+          "text": "Isolate sounda (consonants and vowels) in a word (beginning and/or ending).",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              26
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              26
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              26
+            ]
+          }
+        },
+        {
+          "id": "RL-38L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "8",
+          "text": "Isolate sounda (consonants and vowels) in a word (beginning and/or ending).",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              27
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              27
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              27
+            ]
+          }
+        },
+        {
+          "id": "RL-39L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "9",
+          "text": "Substitute individual sounds in simple words to make new words.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              28
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              28
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              28
+            ]
+          }
+        },
+        {
+          "id": "RL-40L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "9",
+          "text": "Substitute individual sounds in simple words to make new words.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              29
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              29
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              29
+            ]
+          }
+        },
+        {
+          "id": "RL-41L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "9",
+          "text": "Substitute individual sounds in simple words to make new words.",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              30
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              30
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              30
+            ]
+          }
+        },
+        {
+          "id": "RL-42L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "10",
+          "text": "Sound out words accurately.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              31
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              31
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              31
+            ]
+          }
+        },
+        {
+          "id": "RL-43L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "10",
+          "text": "Sound out words accurately.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              32
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              32
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              32
+            ]
+          }
+        },
+        {
+          "id": "RL-44L",
+          "strand": "Phonics and Word Study (sounds to words)",
+          "no": "10",
+          "text": "Sound out words accurately.",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              33
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              33
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              33
+            ]
+          }
+        },
+        {
+          "id": "RL-46L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "11",
+          "text": "Use vocabulary referring to self, family, school, community, and environment.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              34
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              34
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              34
+            ]
+          }
+        },
+        {
+          "id": "RL-47L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "11",
+          "text": "Use vocabulary referring to self, family, school, community, and environment.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              35
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              35
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              35
+            ]
+          }
+        },
+        {
+          "id": "RL-48L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "11",
+          "text": "Use vocabulary referring to self, family, school, community, and environment.",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              36
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              36
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              36
+            ]
+          }
+        },
+        {
+          "id": "RL-50L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "12",
+          "text": "a. words that label persons, places, things, animals, actions, situations, ideas, and emotions",
+          "parent": "Identify words with different functions (naming and describing words).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              37
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              37
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              37
+            ]
+          }
+        },
+        {
+          "id": "RL-51L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "12",
+          "text": "a. words that label persons, places, things, animals, actions, situations, ideas, and emotions",
+          "parent": "Identify words with different functions (naming and describing words).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              38
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              38
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              38
+            ]
+          }
+        },
+        {
+          "id": "RL-52L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "12",
+          "text": "a. words that label persons, places, things, animals, actions, situations, ideas, and emotions",
+          "parent": "Identify words with different functions (naming and describing words).",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              39
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              39
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              39
+            ]
+          }
+        },
+        {
+          "id": "RL-53L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "12",
+          "text": "a. words that label persons, places, things, animals, actions, situations, ideas, and emotions",
+          "parent": "Identify words with different functions (naming and describing words).",
+          "skill": "W",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              40
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              40
+            ]
+          }
+        },
+        {
+          "id": "RL-54L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "12",
+          "text": "b. words that describe persons, places, things, animals, actions, situations, ideas, and emotions",
+          "parent": "Identify words with different functions (naming and describing words).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              41
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              41
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              41
+            ]
+          }
+        },
+        {
+          "id": "RL-55L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "12",
+          "text": "b. words that describe persons, places, things, animals, actions, situations, ideas, and emotions",
+          "parent": "Identify words with different functions (naming and describing words).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              42
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              42
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              42
+            ]
+          }
+        },
+        {
+          "id": "RL-56L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "12",
+          "text": "b. words that describe persons, places, things, animals, actions, situations, ideas, and emotions",
+          "parent": "Identify words with different functions (naming and describing words).",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              43
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              43
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              43
+            ]
+          }
+        },
+        {
+          "id": "RL-57L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "12",
+          "text": "b. words that describe persons, places, things, animals, actions, situations, ideas, and emotions",
+          "parent": "Identify words with different functions (naming and describing words).",
+          "skill": "W",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              44
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              44
+            ]
+          }
+        },
+        {
+          "id": "RL-58L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "13",
+          "text": "Read high-frequency words accurately for meaning.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              45
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              45
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              45
+            ]
+          }
+        },
+        {
+          "id": "RL-59L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "13",
+          "text": "Read high-frequency words accurately for meaning.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              46
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              46
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              46
+            ]
+          }
+        },
+        {
+          "id": "RL-60L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "13",
+          "text": "Read high-frequency words accurately for meaning.",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              47
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              47
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              47
+            ]
+          }
+        },
+        {
+          "id": "RL-61L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "14",
+          "text": "Read content-specific words (Math, Makabansa, and GMRC) accurately for meaning.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              48
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              48
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              48
+            ]
+          }
+        },
+        {
+          "id": "RL-62L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "14",
+          "text": "Read content-specific words (Math, Makabansa, and GMRC) accurately for meaning.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              49
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              49
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              49
+            ]
+          }
+        },
+        {
+          "id": "RL-63L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "14",
+          "text": "Read content-specific words (Math, Makabansa, and GMRC) accurately for meaning.",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              50
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              50
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              50
+            ]
+          }
+        },
+        {
+          "id": "RL-64L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "15",
+          "text": "Write words legibly and correctly.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              51
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              51
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              51
+            ]
+          }
+        },
+        {
+          "id": "RL-65L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "15",
+          "text": "Write words legibly and correctly.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              52
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              52
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              52
+            ]
+          }
+        },
+        {
+          "id": "RL-66L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "15",
+          "text": "Write words legibly and correctly.",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              53
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              53
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              53
+            ]
+          }
+        },
+        {
+          "id": "RL-67L",
+          "strand": "Vocabulary and Word Knowledge (words)",
+          "no": "15",
+          "text": "Write words legibly and correctly.",
+          "parent": "",
+          "skill": "W",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              54
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              54
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              54
+            ]
+          }
+        },
+        {
+          "id": "RL-69L",
+          "strand": "Book and Print Knowledge (words)",
+          "no": "16",
+          "text": "Recognize environmental print (symbols).",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              55
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              55
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              55
+            ]
+          }
+        },
+        {
+          "id": "RL-70L",
+          "strand": "Book and Print Knowledge (words)",
+          "no": "16",
+          "text": "Recognize environmental print (symbols).",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              56
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              56
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              56
+            ]
+          }
+        },
+        {
+          "id": "RL-71L",
+          "strand": "Book and Print Knowledge (words)",
+          "no": "16",
+          "text": "Recognize environmental print (symbols).",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              57
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              57
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              57
+            ]
+          }
+        },
+        {
+          "id": "RL-72L",
+          "strand": "Book and Print Knowledge (words)",
+          "no": "17",
+          "text": "Recognize the parts of the book (cover page, title page, etc.).",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              58
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              58
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              58
+            ]
+          }
+        },
+        {
+          "id": "RL-73L",
+          "strand": "Book and Print Knowledge (words)",
+          "no": "17",
+          "text": "Recognize the parts of the book (cover page, title page, etc.).",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              59
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              59
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              59
+            ]
+          }
+        },
+        {
+          "id": "RL-74L",
+          "strand": "Book and Print Knowledge (words)",
+          "no": "17",
+          "text": "Recognize the parts of the book (cover page, title page, etc.).",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              60
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              60
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              60
+            ]
+          }
+        },
+        {
+          "id": "RL-75L",
+          "strand": "Book and Print Knowledge (words)",
+          "no": "18",
+          "text": "Recognize proper eye movement skills in reading: left to right, top to bottom, and return sweep.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              61
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              61
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              61
+            ]
+          }
+        },
+        {
+          "id": "RL-76L",
+          "strand": "Book and Print Knowledge (words)",
+          "no": "18",
+          "text": "Recognize proper eye movement skills in reading: left to right, top to bottom, and return sweep.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              62
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              62
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              62
+            ]
+          }
+        },
+        {
+          "id": "RL-77L",
+          "strand": "Book and Print Knowledge (words)",
+          "no": "18",
+          "text": "Recognize proper eye movement skills in reading: left to right, top to bottom, and return sweep.",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              63
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              63
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              63
+            ]
+          }
+        },
+        {
+          "id": "RL-19R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "19",
+          "text": "Read sentences with appropriate speed, accuracy, and expression.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              64
+            ]
+          }
+        },
+        {
+          "id": "RL-20R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "19",
+          "text": "Read sentences with appropriate speed, accuracy, and expression.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              65
+            ]
+          }
+        },
+        {
+          "id": "RL-21R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "19",
+          "text": "Read sentences with appropriate speed, accuracy, and expression.",
+          "parent": "",
+          "skill": "R",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              66
+            ]
+          }
+        },
+        {
+          "id": "RL-23R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "a. Note important details in stories (character, setting, and events).",
+          "parent": "Comprehend stories.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              67
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              67
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              67
+            ]
+          }
+        },
+        {
+          "id": "RL-24R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "a. Note important details in stories (character, setting, and events).",
+          "parent": "Comprehend stories.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              68
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              68
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              68
+            ]
+          }
+        },
+        {
+          "id": "RL-25R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "a. Note important details in stories (character, setting, and events).",
+          "parent": "Comprehend stories.",
+          "skill": "R",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              69
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              69
+            ]
+          }
+        },
+        {
+          "id": "RL-26R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "b. Sequence events in stories.",
+          "parent": "Comprehend stories.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              70
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              70
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              70
+            ]
+          }
+        },
+        {
+          "id": "RL-27R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "b. Sequence events in stories.",
+          "parent": "Comprehend stories.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              71
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              71
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              71
+            ]
+          }
+        },
+        {
+          "id": "RL-28R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "b. Sequence events in stories.",
+          "parent": "Comprehend stories.",
+          "skill": "R",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              72
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              72
+            ]
+          }
+        },
+        {
+          "id": "RL-29R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "c. Infer the character's feelings and traits.",
+          "parent": "Comprehend stories.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              73
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              73
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              73
+            ]
+          }
+        },
+        {
+          "id": "RL-30R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "c. Infer the character's feelings and traits.",
+          "parent": "Comprehend stories.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              74
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              74
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              74
+            ]
+          }
+        },
+        {
+          "id": "RL-31R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "c. Infer the character's feelings and traits.",
+          "parent": "Comprehend stories.",
+          "skill": "R",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              75
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              75
+            ]
+          }
+        },
+        {
+          "id": "RL-32R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "d. Predict possible ending.",
+          "parent": "Comprehend stories.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              76
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              76
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              76
+            ]
+          }
+        },
+        {
+          "id": "RL-33R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "d. Predict possible ending.",
+          "parent": "Comprehend stories.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              77
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              77
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              77
+            ]
+          }
+        },
+        {
+          "id": "RL-34R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "d. Predict possible ending.",
+          "parent": "Comprehend stories.",
+          "skill": "R",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              78
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              78
+            ]
+          }
+        },
+        {
+          "id": "RL-35R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "e. Relate story events to one's experience.",
+          "parent": "Comprehend stories.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              79
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              79
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              79
+            ]
+          }
+        },
+        {
+          "id": "RL-36R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "e. Relate story events to one's experience.",
+          "parent": "Comprehend stories.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              80
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              80
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              80
+            ]
+          }
+        },
+        {
+          "id": "RL-37R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "e. Relate story events to one's experience.",
+          "parent": "Comprehend stories.",
+          "skill": "R",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              81
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              81
+            ]
+          }
+        },
+        {
+          "id": "RL-38R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "f. Identify cause and effects of events.",
+          "parent": "Comprehend stories.",
+          "skill": "L",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              82
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              82
+            ]
+          }
+        },
+        {
+          "id": "RL-39R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "f. Identify cause and effects of events.",
+          "parent": "Comprehend stories.",
+          "skill": "S",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              83
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              83
+            ]
+          }
+        },
+        {
+          "id": "RL-40R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "f. Identify cause and effects of events.",
+          "parent": "Comprehend stories.",
+          "skill": "R",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              84
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              84
+            ]
+          }
+        },
+        {
+          "id": "RL-41R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "g. Identify problem and solution in stories.",
+          "parent": "Comprehend stories.",
+          "skill": "L",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              85
+            ]
+          }
+        },
+        {
+          "id": "RL-42R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "g. Identify problem and solution in stories.",
+          "parent": "Comprehend stories.",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              86
+            ]
+          }
+        },
+        {
+          "id": "RL-43R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "20",
+          "text": "g. Identify problem and solution in stories.",
+          "parent": "Comprehend stories.",
+          "skill": "R",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              87
+            ]
+          }
+        },
+        {
+          "id": "RL-45R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "21",
+          "text": "a. Note significant details in informational texts (list and describe).",
+          "parent": "Comprehend informational text.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              88
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              88
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              88
+            ]
+          }
+        },
+        {
+          "id": "RL-46R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "21",
+          "text": "a. Note significant details in informational texts (list and describe).",
+          "parent": "Comprehend informational text.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              89
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              89
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              89
+            ]
+          }
+        },
+        {
+          "id": "RL-47R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "21",
+          "text": "a. Note significant details in informational texts (list and describe).",
+          "parent": "Comprehend informational text.",
+          "skill": "R",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              90
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              90
+            ]
+          }
+        },
+        {
+          "id": "RL-48R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "21",
+          "text": "b. Identify problem and solution.",
+          "parent": "Comprehend informational text.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              91
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              91
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              91
+            ]
+          }
+        },
+        {
+          "id": "RL-49R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "21",
+          "text": "b. Identify problem and solution.",
+          "parent": "Comprehend informational text.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              92
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              92
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              92
+            ]
+          }
+        },
+        {
+          "id": "RL-50R",
+          "strand": "Comprehending and Analyzing Texts (discourse)",
+          "no": "21",
+          "text": "b. Identify problem and solution.",
+          "parent": "Comprehend informational text.",
+          "skill": "R",
+          "src": {
+            "2": [
+              "TERM 2 READING & LITERACY",
+              93
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              93
+            ]
+          }
+        },
+        {
+          "id": "RL-53R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "22",
+          "text": "a. oneself and family",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              94
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              94
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              94
+            ]
+          }
+        },
+        {
+          "id": "RL-54R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "22",
+          "text": "a. oneself and family",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "W",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              95
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              95
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              95
+            ]
+          }
+        },
+        {
+          "id": "RL-55R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "22",
+          "text": "b. school",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              96
+            ]
+          }
+        },
+        {
+          "id": "RL-56R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "22",
+          "text": "b. school",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "W",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              97
+            ]
+          }
+        },
+        {
+          "id": "RL-57R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "22",
+          "text": "c. community",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              98
+            ]
+          }
+        },
+        {
+          "id": "RL-58R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "22",
+          "text": "c. community",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "W",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              99
+            ]
+          }
+        },
+        {
+          "id": "RL-59R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "23",
+          "text": "Use own words in retelling myths, legends, fables, and narrative poems.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              100
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              100
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              100
+            ]
+          }
+        },
+        {
+          "id": "RL-60R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "23",
+          "text": "Use own words in retelling myths, legends, fables, and narrative poems.",
+          "parent": "",
+          "skill": "W",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              101
+            ]
+          }
+        },
+        {
+          "id": "RL-62R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "24",
+          "text": "a. oneself and family",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              102
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              102
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              102
+            ]
+          }
+        },
+        {
+          "id": "RL-63R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "24",
+          "text": "a. oneself and family",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "W",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              103
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              103
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              103
+            ]
+          }
+        },
+        {
+          "id": "RL-64R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "24",
+          "text": "b. school",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              104
+            ]
+          }
+        },
+        {
+          "id": "RL-65R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "24",
+          "text": "b. school",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "W",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              105
+            ]
+          }
+        },
+        {
+          "id": "RL-66R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "24",
+          "text": "c. community",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              106
+            ]
+          }
+        },
+        {
+          "id": "RL-67R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "24",
+          "text": "c. community",
+          "parent": "Narrate one's personal experiences.",
+          "skill": "W",
+          "src": {
+            "3": [
+              "TERM 3 READING & LITERACY",
+              107
+            ]
+          }
+        },
+        {
+          "id": "RL-68R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "25",
+          "text": "Respond creatively to texts (myths, legends, fables, and narrative poems).",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              108
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              108
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              108
+            ]
+          }
+        },
+        {
+          "id": "RL-69R",
+          "strand": "Creating and Composing Texts (discourse)",
+          "no": "25",
+          "text": "Respond creatively to texts (myths, legends, fables, and narrative poems).",
+          "parent": "",
+          "skill": "W",
+          "src": {
+            "1": [
+              "TERM 1 READING & LITERACY",
+              109
+            ],
+            "2": [
+              "TERM 2 READING & LITERACY",
+              109
+            ],
+            "3": [
+              "TERM 3 READING & LITERACY",
+              109
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "LANG",
+      "name": "Language",
+      "items": [
+        {
+          "id": "LANG-100L",
+          "strand": "Language for Interacting with Others",
+          "no": "1",
+          "text": "a. oneself and family",
+          "parent": "Talk about one's personal experiences.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              9
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              9
+            ]
+          }
+        },
+        {
+          "id": "LANG-101L",
+          "strand": "Language for Interacting with Others",
+          "no": "1",
+          "text": "a. oneself and family",
+          "parent": "Talk about one's personal experiences.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              10
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              10
+            ]
+          }
+        },
+        {
+          "id": "LANG-102L",
+          "strand": "Language for Interacting with Others",
+          "no": "1",
+          "text": "b. school",
+          "parent": "Talk about one's personal experiences.",
+          "skill": "L",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              11
+            ]
+          }
+        },
+        {
+          "id": "LANG-103L",
+          "strand": "Language for Interacting with Others",
+          "no": "1",
+          "text": "b. school",
+          "parent": "Talk about one's personal experiences.",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              12
+            ]
+          }
+        },
+        {
+          "id": "LANG-104L",
+          "strand": "Language for Interacting with Others",
+          "no": "1",
+          "text": "c. community",
+          "parent": "Talk about one's personal experiences.",
+          "skill": "L",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              13
+            ]
+          }
+        },
+        {
+          "id": "LANG-105L",
+          "strand": "Language for Interacting with Others",
+          "no": "1",
+          "text": "c. community",
+          "parent": "Talk about one's personal experiences.",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              14
+            ]
+          }
+        },
+        {
+          "id": "LANG-107L",
+          "strand": "Language for Interacting with Others",
+          "no": "2",
+          "text": "a. Respond to teacher’s instructions.",
+          "parent": "Participate in classroom interactions using verbal and non-verbal responses.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              15
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              15
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              15
+            ]
+          }
+        },
+        {
+          "id": "LANG-108L",
+          "strand": "Language for Interacting with Others",
+          "no": "2",
+          "text": "a. Respond to teacher’s instructions.",
+          "parent": "Participate in classroom interactions using verbal and non-verbal responses.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              16
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              16
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              16
+            ]
+          }
+        },
+        {
+          "id": "LANG-109L",
+          "strand": "Language for Interacting with Others",
+          "no": "2",
+          "text": "b. Ask and respond to questions.",
+          "parent": "Participate in classroom interactions using verbal and non-verbal responses.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              17
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              17
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              17
+            ]
+          }
+        },
+        {
+          "id": "LANG-110L",
+          "strand": "Language for Interacting with Others",
+          "no": "2",
+          "text": "b. Ask and respond to questions.",
+          "parent": "Participate in classroom interactions using verbal and non-verbal responses.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              18
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              18
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              18
+            ]
+          }
+        },
+        {
+          "id": "LANG-112L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "a. Make requests.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              19
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              19
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              19
+            ]
+          }
+        },
+        {
+          "id": "LANG-113L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "a. Make requests.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              20
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              20
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              20
+            ]
+          }
+        },
+        {
+          "id": "LANG-114L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "b. Offer information.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              21
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              21
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              21
+            ]
+          }
+        },
+        {
+          "id": "LANG-115L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "b. Offer information.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              22
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              22
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              22
+            ]
+          }
+        },
+        {
+          "id": "LANG-116L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "c. Communicate needs.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              23
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              23
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              23
+            ]
+          }
+        },
+        {
+          "id": "LANG-117L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "c. Communicate needs.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              24
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              24
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              24
+            ]
+          }
+        },
+        {
+          "id": "LANG-118L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "d. Clarify information.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              25
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              25
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              25
+            ]
+          }
+        },
+        {
+          "id": "LANG-119L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "d. Clarify information.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              26
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              26
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              26
+            ]
+          }
+        },
+        {
+          "id": "LANG-120L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "e. Seek help.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              27
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              27
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              27
+            ]
+          }
+        },
+        {
+          "id": "LANG-121L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "e. Seek help.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              28
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              28
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              28
+            ]
+          }
+        },
+        {
+          "id": "LANG-122L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "f. Take part in or take turns in conversation or discussion.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              29
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              29
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              29
+            ]
+          }
+        },
+        {
+          "id": "LANG-123L",
+          "strand": "Language for Interacting with Others",
+          "no": "3",
+          "text": "f. Take part in or take turns in conversation or discussion.",
+          "parent": "Interact purposely and participate in conversations and discussions, in pairs, in groups, or in whole-class discussions.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              30
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              30
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              30
+            ]
+          }
+        },
+        {
+          "id": "LANG-125L",
+          "strand": "Language for Interacting with Others",
+          "no": "4",
+          "text": "a. Use simple and appropriate personal greetings.",
+          "parent": "Use common and socially acceptable expressions (e.g., greetings, leave-taking).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              31
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              31
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              31
+            ]
+          }
+        },
+        {
+          "id": "LANG-126L",
+          "strand": "Language for Interacting with Others",
+          "no": "4",
+          "text": "a. Use simple and appropriate personal greetings.",
+          "parent": "Use common and socially acceptable expressions (e.g., greetings, leave-taking).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              32
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              32
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              32
+            ]
+          }
+        },
+        {
+          "id": "LANG-127L",
+          "strand": "Language for Interacting with Others",
+          "no": "4",
+          "text": "b. Use familiar terms of address.",
+          "parent": "Use common and socially acceptable expressions (e.g., greetings, leave-taking).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              33
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              33
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              33
+            ]
+          }
+        },
+        {
+          "id": "LANG-128L",
+          "strand": "Language for Interacting with Others",
+          "no": "4",
+          "text": "b. Use familiar terms of address.",
+          "parent": "Use common and socially acceptable expressions (e.g., greetings, leave-taking).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              34
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              34
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              34
+            ]
+          }
+        },
+        {
+          "id": "LANG-129L",
+          "strand": "Language for Interacting with Others",
+          "no": "4",
+          "text": "c. Greet and respond appropriately to greetings.",
+          "parent": "Use common and socially acceptable expressions (e.g., greetings, leave-taking).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              35
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              35
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              35
+            ]
+          }
+        },
+        {
+          "id": "LANG-130L",
+          "strand": "Language for Interacting with Others",
+          "no": "4",
+          "text": "c. Greet and respond appropriately to greetings.",
+          "parent": "Use common and socially acceptable expressions (e.g., greetings, leave-taking).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              36
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              36
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              36
+            ]
+          }
+        },
+        {
+          "id": "LANG-131L",
+          "strand": "Language for Interacting with Others",
+          "no": "5",
+          "text": "Share confidently thoughts, preferences, needs, feelings, and ideas with peers, teachers, and other adults.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              37
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              37
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              37
+            ]
+          }
+        },
+        {
+          "id": "LANG-132L",
+          "strand": "Language for Interacting with Others",
+          "no": "5",
+          "text": "Share confidently thoughts, preferences, needs, feelings, and ideas with peers, teachers, and other adults.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              38
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              38
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              38
+            ]
+          }
+        },
+        {
+          "id": "LANG-135L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "6",
+          "text": "a. oneself and family",
+          "parent": "Express ideas using a variety of symbols (e.g., drawings, emojis, scribbles).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              39
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              39
+            ]
+          }
+        },
+        {
+          "id": "LANG-136L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "6",
+          "text": "a. oneself and family",
+          "parent": "Express ideas using a variety of symbols (e.g., drawings, emojis, scribbles).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              40
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              40
+            ]
+          }
+        },
+        {
+          "id": "LANG-137L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "6",
+          "text": "b. school",
+          "parent": "Express ideas using a variety of symbols (e.g., drawings, emojis, scribbles).",
+          "skill": "L",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              41
+            ]
+          }
+        },
+        {
+          "id": "LANG-138L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "6",
+          "text": "b. school",
+          "parent": "Express ideas using a variety of symbols (e.g., drawings, emojis, scribbles).",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              42
+            ]
+          }
+        },
+        {
+          "id": "LANG-139L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "6",
+          "text": "c. community",
+          "parent": "Express ideas using a variety of symbols (e.g., drawings, emojis, scribbles).",
+          "skill": "L",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              45
+            ]
+          }
+        },
+        {
+          "id": "LANG-140L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "6",
+          "text": "c. community",
+          "parent": "Express ideas using a variety of symbols (e.g., drawings, emojis, scribbles).",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              46
+            ]
+          }
+        },
+        {
+          "id": "LANG-142L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "7",
+          "text": "a. words that represent people, animals and objects, locations (naming words).",
+          "parent": "Use words to represent ideas and events.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              45
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              45
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              47
+            ]
+          }
+        },
+        {
+          "id": "LANG-143L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "7",
+          "text": "a. words that represent people, animals and objects, locations (naming words).",
+          "parent": "Use words to represent ideas and events.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              46
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              46
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              48
+            ]
+          }
+        },
+        {
+          "id": "LANG-144L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "7",
+          "text": "b. words that represent activities and situations (action words)",
+          "parent": "Use words to represent ideas and events.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              47
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              47
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              49
+            ]
+          }
+        },
+        {
+          "id": "LANG-145L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "7",
+          "text": "b. words that represent activities and situations (action words)",
+          "parent": "Use words to represent ideas and events.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              48
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              48
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              50
+            ]
+          }
+        },
+        {
+          "id": "LANG-146L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "7",
+          "text": "c. words that represent qualities or attributes (describing words)",
+          "parent": "Use words to represent ideas and events.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              49
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              49
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              51
+            ]
+          }
+        },
+        {
+          "id": "LANG-147L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "7",
+          "text": "c. words that represent qualities or attributes (describing words)",
+          "parent": "Use words to represent ideas and events.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              50
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              50
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              52
+            ]
+          }
+        },
+        {
+          "id": "LANG-149L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "8",
+          "text": "a. oneself and family",
+          "parent": "Use high-frequency and content-specific words.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              51
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              51
+            ]
+          }
+        },
+        {
+          "id": "LANG-150L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "8",
+          "text": "a. oneself and family",
+          "parent": "Use high-frequency and content-specific words.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              52
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              52
+            ]
+          }
+        },
+        {
+          "id": "LANG-151L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "8",
+          "text": "b. school",
+          "parent": "Use high-frequency and content-specific words.",
+          "skill": "L",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              55
+            ]
+          }
+        },
+        {
+          "id": "LANG-152L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "8",
+          "text": "b. school",
+          "parent": "Use high-frequency and content-specific words.",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              56
+            ]
+          }
+        },
+        {
+          "id": "LANG-153L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "8",
+          "text": "c. community",
+          "parent": "Use high-frequency and content-specific words.",
+          "skill": "L",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              57
+            ]
+          }
+        },
+        {
+          "id": "LANG-154L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "8",
+          "text": "c. community",
+          "parent": "Use high-frequency and content-specific words.",
+          "skill": "S",
+          "src": {
+            "3": [
+              "TERM 3 LANGUAGE",
+              58
+            ]
+          }
+        },
+        {
+          "id": "LANG-156L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "9",
+          "text": "a. Express compare and contrast.",
+          "parent": "Use language to express connections between ideas.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              57
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              57
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              59
+            ]
+          }
+        },
+        {
+          "id": "LANG-157L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "9",
+          "text": "a. Express compare and contrast.",
+          "parent": "Use language to express connections between ideas.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              58
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              58
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              60
+            ]
+          }
+        },
+        {
+          "id": "LANG-158L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "9",
+          "text": "b. Express cause and effect.",
+          "parent": "Use language to express connections between ideas.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              59
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              59
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              61
+            ]
+          }
+        },
+        {
+          "id": "LANG-159L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "9",
+          "text": "b. Express cause and effect.",
+          "parent": "Use language to express connections between ideas.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              60
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              60
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              62
+            ]
+          }
+        },
+        {
+          "id": "LANG-160L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "9",
+          "text": "c. Use time words to relate ideas.",
+          "parent": "Use language to express connections between ideas.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              61
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              61
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              63
+            ]
+          }
+        },
+        {
+          "id": "LANG-161L",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "9",
+          "text": "c. Use time words to relate ideas.",
+          "parent": "Use language to express connections between ideas.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              62
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              62
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              64
+            ]
+          }
+        },
+        {
+          "id": "LANG-98R",
+          "strand": "",
+          "no": "10",
+          "text": "Participate in and contribute to group oral language activities (e.g., singing, chanting, sabayang bigkas).",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              63
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              63
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              65
+            ]
+          }
+        },
+        {
+          "id": "LANG-99R",
+          "strand": "",
+          "no": "10",
+          "text": "Participate in and contribute to group oral language activities (e.g., singing, chanting, sabayang bigkas).",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              64
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              64
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              66
+            ]
+          }
+        },
+        {
+          "id": "LANG-101R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "11",
+          "text": "Notice the features (e.g., sounds, intonation, signs) of their first language and other languages in familiar contexts.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              65
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              65
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              67
+            ]
+          }
+        },
+        {
+          "id": "LANG-102R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "11",
+          "text": "Notice the features (e.g., sounds, intonation, signs) of their first language and other languages in familiar contexts.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              66
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              66
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              68
+            ]
+          }
+        },
+        {
+          "id": "LANG-104R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "12",
+          "text": "a. Recognize the difference between statements, questions, commands and exclamations.",
+          "parent": "Recognize how a change in intonation (volume, pitch) and body language can change the meanings of utterances/expressions.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              67
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              67
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              69
+            ]
+          }
+        },
+        {
+          "id": "LANG-105R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "12",
+          "text": "a. Recognize the difference between statements, questions, commands and exclamations.",
+          "parent": "Recognize how a change in intonation (volume, pitch) and body language can change the meanings of utterances/expressions.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              68
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              68
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              70
+            ]
+          }
+        },
+        {
+          "id": "LANG-106R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "12",
+          "text": "b. Respond to change of tones and cues through facial expressions, gestures and actions",
+          "parent": "Recognize how a change in intonation (volume, pitch) and body language can change the meanings of utterances/expressions.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              69
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              69
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              71
+            ]
+          }
+        },
+        {
+          "id": "LANG-107R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "12",
+          "text": "b. Respond to change of tones and cues through facial expressions, gestures and actions",
+          "parent": "Recognize how a change in intonation (volume, pitch) and body language can change the meanings of utterances/expressions.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              70
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              70
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              72
+            ]
+          }
+        },
+        {
+          "id": "LANG-109R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "13",
+          "text": "a. Share about the language(s) spoken at home.",
+          "parent": "Recognize how language reflects cultural practices and norms.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              71
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              71
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              73
+            ]
+          }
+        },
+        {
+          "id": "LANG-110R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "13",
+          "text": "a. Share about the language(s) spoken at home.",
+          "parent": "Recognize how language reflects cultural practices and norms.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              72
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              72
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              74
+            ]
+          }
+        },
+        {
+          "id": "LANG-111R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "13",
+          "text": "b. Share words and phrases in their language.",
+          "parent": "Recognize how language reflects cultural practices and norms.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              73
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              73
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              75
+            ]
+          }
+        },
+        {
+          "id": "LANG-112R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "13",
+          "text": "b. Share words and phrases in their language.",
+          "parent": "Recognize how language reflects cultural practices and norms.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              74
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              74
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              76
+            ]
+          }
+        },
+        {
+          "id": "LANG-113R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "13",
+          "text": "c. Notice how local names of streets, places and landmarks have origins in their language.",
+          "parent": "Recognize how language reflects cultural practices and norms.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              75
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              75
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              77
+            ]
+          }
+        },
+        {
+          "id": "LANG-114R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "13",
+          "text": "c. Notice how local names of streets, places and landmarks have origins in their language.",
+          "parent": "Recognize how language reflects cultural practices and norms.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              76
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              76
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              78
+            ]
+          }
+        },
+        {
+          "id": "LANG-115R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "13",
+          "text": "d. Explore local terms for food and their origins.",
+          "parent": "Recognize how language reflects cultural practices and norms.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              77
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              77
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              79
+            ]
+          }
+        },
+        {
+          "id": "LANG-116R",
+          "strand": "Language for Developing and Expressing Ideas",
+          "no": "13",
+          "text": "d. Explore local terms for food and their origins.",
+          "parent": "Recognize how language reflects cultural practices and norms.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              78
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              78
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              80
+            ]
+          }
+        },
+        {
+          "id": "LANG-118R",
+          "strand": "Interacting with Texts",
+          "no": "14",
+          "text": "View and listen to a range of texts for enjoyment and interest.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              79
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              79
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              81
+            ]
+          }
+        },
+        {
+          "id": "LANG-119R",
+          "strand": "Interacting with Texts",
+          "no": "15",
+          "text": "Recognize icons and symbols in various texts found in familiar contexts (e.g., printed and digital texts, books, magazines, environmental print).",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              80
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              80
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              82
+            ]
+          }
+        },
+        {
+          "id": "LANG-120R",
+          "strand": "Interacting with Texts",
+          "no": "15",
+          "text": "Recognize icons and symbols in various texts found in familiar contexts (e.g., printed and digital texts, books, magazines, environmental print).",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              81
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              81
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              83
+            ]
+          }
+        },
+        {
+          "id": "LANG-122R",
+          "strand": "Interacting with Texts",
+          "no": "16",
+          "text": "a. View or listen to spoken texts.",
+          "parent": "Engage with or respond to a range of texts.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              82
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              82
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              84
+            ]
+          }
+        },
+        {
+          "id": "LANG-123R",
+          "strand": "Interacting with Texts",
+          "no": "16",
+          "text": "a. View or listen to spoken texts.",
+          "parent": "Engage with or respond to a range of texts.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              83
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              83
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              85
+            ]
+          }
+        },
+        {
+          "id": "LANG-124R",
+          "strand": "Interacting with Texts",
+          "no": "16",
+          "text": "b. Identify a variety of purposes for viewing and listening to texts.",
+          "parent": "Engage with or respond to a range of texts.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              84
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              84
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              86
+            ]
+          }
+        },
+        {
+          "id": "LANG-125R",
+          "strand": "Interacting with Texts",
+          "no": "16",
+          "text": "b. Identify a variety of purposes for viewing and listening to texts.",
+          "parent": "Engage with or respond to a range of texts.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              85
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              85
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              87
+            ]
+          }
+        },
+        {
+          "id": "LANG-126R",
+          "strand": "Interacting with Texts",
+          "no": "16",
+          "text": "c. Discuss what is interesting or entertaining in a text.",
+          "parent": "Engage with or respond to a range of texts.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              86
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              86
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              88
+            ]
+          }
+        },
+        {
+          "id": "LANG-127R",
+          "strand": "Interacting with Texts",
+          "no": "16",
+          "text": "c. Discuss what is interesting or entertaining in a text.",
+          "parent": "Engage with or respond to a range of texts.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              87
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              87
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              89
+            ]
+          }
+        },
+        {
+          "id": "LANG-128R",
+          "strand": "Interacting with Texts",
+          "no": "16",
+          "text": "d. Express personal preferences.",
+          "parent": "Engage with or respond to a range of texts.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              88
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              88
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              90
+            ]
+          }
+        },
+        {
+          "id": "LANG-129R",
+          "strand": "Interacting with Texts",
+          "no": "16",
+          "text": "d. Express personal preferences.",
+          "parent": "Engage with or respond to a range of texts.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              89
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              89
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              91
+            ]
+          }
+        },
+        {
+          "id": "LANG-130R",
+          "strand": "Interacting with Texts",
+          "no": "17",
+          "text": "Give reason/s for choosing books/texts for enjoyment and interest.",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              90
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              90
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              92
+            ]
+          }
+        },
+        {
+          "id": "LANG-131R",
+          "strand": "Interacting with Texts",
+          "no": "17",
+          "text": "Give reason/s for choosing books/texts for enjoyment and interest.",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              91
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              91
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              93
+            ]
+          }
+        },
+        {
+          "id": "LANG-134R",
+          "strand": "Creating Texts",
+          "no": "18",
+          "text": "a. Note and report main points.",
+          "parent": "Record and report ideas and events using some learnt vocabulary.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              92
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              92
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              94
+            ]
+          }
+        },
+        {
+          "id": "LANG-135R",
+          "strand": "Creating Texts",
+          "no": "18",
+          "text": "a. Note and report main points.",
+          "parent": "Record and report ideas and events using some learnt vocabulary.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              93
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              93
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              95
+            ]
+          }
+        },
+        {
+          "id": "LANG-136R",
+          "strand": "Creating Texts",
+          "no": "18",
+          "text": "b. Sequence up to key three (3) key events.",
+          "parent": "Record and report ideas and events using some learnt vocabulary.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              94
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              94
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              96
+            ]
+          }
+        },
+        {
+          "id": "LANG-137R",
+          "strand": "Creating Texts",
+          "no": "18",
+          "text": "b. Sequence up to key three (3) key events.",
+          "parent": "Record and report ideas and events using some learnt vocabulary.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              95
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              95
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              97
+            ]
+          }
+        },
+        {
+          "id": "LANG-138R",
+          "strand": "Creating Texts",
+          "no": "18",
+          "text": "c. Relate ideas or events to one’s experience.",
+          "parent": "Record and report ideas and events using some learnt vocabulary.",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              96
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              96
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              98
+            ]
+          }
+        },
+        {
+          "id": "LANG-139R",
+          "strand": "Creating Texts",
+          "no": "18",
+          "text": "c. Relate ideas or events to one’s experience.",
+          "parent": "Record and report ideas and events using some learnt vocabulary.",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              97
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              97
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              99
+            ]
+          }
+        },
+        {
+          "id": "LANG-140R",
+          "strand": "Creating Texts",
+          "no": "19",
+          "text": "Use own words in retelling information from various texts (e.g., legends, fables, and jokes).",
+          "parent": "",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              98
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              98
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              100
+            ]
+          }
+        },
+        {
+          "id": "LANG-141R",
+          "strand": "Creating Texts",
+          "no": "19",
+          "text": "Use own words in retelling information from various texts (e.g., legends, fables, and jokes).",
+          "parent": "",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              99
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              99
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              101
+            ]
+          }
+        },
+        {
+          "id": "LANG-143R",
+          "strand": "Creating Texts",
+          "no": "20",
+          "text": "a. Note and describe main points (e.g., main characters and events).",
+          "parent": "Draw and discuss information or ideas from a range of texts (e.g.,stories, images).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              100
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              100
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              102
+            ]
+          }
+        },
+        {
+          "id": "LANG-144R",
+          "strand": "Creating Texts",
+          "no": "20",
+          "text": "a. Note and describe main points (e.g., main characters and events).",
+          "parent": "Draw and discuss information or ideas from a range of texts (e.g.,stories, images).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              101
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              101
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              103
+            ]
+          }
+        },
+        {
+          "id": "LANG-145R",
+          "strand": "Creating Texts",
+          "no": "20",
+          "text": "b. Sequence up to key three (3) key events.",
+          "parent": "Draw and discuss information or ideas from a range of texts (e.g.,stories, images).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              102
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              102
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              104
+            ]
+          }
+        },
+        {
+          "id": "LANG-146R",
+          "strand": "Creating Texts",
+          "no": "20",
+          "text": "b. Sequence up to key three (3) key events.",
+          "parent": "Draw and discuss information or ideas from a range of texts (e.g.,stories, images).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              103
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              103
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              105
+            ]
+          }
+        },
+        {
+          "id": "LANG-147R",
+          "strand": "Creating Texts",
+          "no": "20",
+          "text": "c. Infer the character’s feelings and traits.",
+          "parent": "Draw and discuss information or ideas from a range of texts (e.g.,stories, images).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              104
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              104
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              106
+            ]
+          }
+        },
+        {
+          "id": "LANG-148R",
+          "strand": "Creating Texts",
+          "no": "20",
+          "text": "c. Infer the character’s feelings and traits.",
+          "parent": "Draw and discuss information or ideas from a range of texts (e.g.,stories, images).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              105
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              105
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              107
+            ]
+          }
+        },
+        {
+          "id": "LANG-149R",
+          "strand": "Creating Texts",
+          "no": "20",
+          "text": "d. Predict possible endings.",
+          "parent": "Draw and discuss information or ideas from a range of texts (e.g.,stories, images).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              106
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              106
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              108
+            ]
+          }
+        },
+        {
+          "id": "LANG-150R",
+          "strand": "Creating Texts",
+          "no": "20",
+          "text": "d. Predict possible endings.",
+          "parent": "Draw and discuss information or ideas from a range of texts (e.g.,stories, images).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              107
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              107
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              109
+            ]
+          }
+        },
+        {
+          "id": "LANG-151R",
+          "strand": "Creating Texts",
+          "no": "20",
+          "text": "e. Relate ideas or events to one’s experience.",
+          "parent": "Draw and discuss information or ideas from a range of texts (e.g.,stories, images).",
+          "skill": "L",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              108
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              108
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              110
+            ]
+          }
+        },
+        {
+          "id": "LANG-152R",
+          "strand": "Creating Texts",
+          "no": "20",
+          "text": "e. Relate ideas or events to one’s experience.",
+          "parent": "Draw and discuss information or ideas from a range of texts (e.g.,stories, images).",
+          "skill": "S",
+          "src": {
+            "1": [
+              "TERM 1 LANGUAGE",
+              109
+            ],
+            "2": [
+              "TERM 2 LANGUAGE",
+              109
+            ],
+            "3": [
+              "TERM 3 LANGUAGE",
+              111
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "MATH",
+      "name": "Mathematics",
+      "items": [
+        {
+          "id": "MATH-176L",
+          "strand": "Number and Algebra",
+          "no": "1",
+          "text": "Count up to 100 (includes counting up or down from a given number and identifying a number that is 1 more or 1 less than a given number).",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              9
+            ]
+          }
+        },
+        {
+          "id": "MATH-177L",
+          "strand": "Number and Algebra",
+          "no": "2",
+          "text": "Read and write numerals up to 100.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              10
+            ]
+          }
+        },
+        {
+          "id": "MATH-178L",
+          "strand": "Number and Algebra",
+          "no": "3",
+          "text": "Recognize and represent numbers up to 100 using a variety of concrete and pictorial models (e.g., number line, block or bar models, and numerals).",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              11
+            ]
+          }
+        },
+        {
+          "id": "MATH-179L",
+          "strand": "Number and Algebra",
+          "no": "4",
+          "text": "Compare two numbers up to 20.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              12
+            ]
+          }
+        },
+        {
+          "id": "MATH-180L",
+          "strand": "Number and Algebra",
+          "no": "5",
+          "text": "Order numbers up to 20 from smallest to largest, and vice versa.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              13
+            ]
+          }
+        },
+        {
+          "id": "MATH-181L",
+          "strand": "Number and Algebra",
+          "no": "6",
+          "text": "Describe the position of objects using ordinal numbers: 1st, 2nd, 3rd, up to 10th.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              14
+            ]
+          }
+        },
+        {
+          "id": "MATH-182L",
+          "strand": "Number and Algebra",
+          "no": "7",
+          "text": "Compose and decompose numbers up to 10 using concrete materials.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              15
+            ]
+          }
+        },
+        {
+          "id": "MATH-183L",
+          "strand": "Number and Algebra",
+          "no": "8",
+          "text": "Illustrate addition of numbers with sums up to 20 using a variety of concrete and pictorial models and describes addition as “counting up,” and “putting together.”",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              16
+            ]
+          }
+        },
+        {
+          "id": "MATH-185L",
+          "strand": "Number and Algebra",
+          "no": "9",
+          "text": "a. the sum of zero and any number is equal to the number",
+          "parent": "Illustrate by applying the following properties of addition, using sums up to 20:",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              17
+            ]
+          }
+        },
+        {
+          "id": "MATH-186L",
+          "strand": "Number and Algebra",
+          "no": "9",
+          "text": "b. changing the order of the addends does not change the sum",
+          "parent": "Illustrate by applying the following properties of addition, using sums up to 20:",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              18
+            ]
+          }
+        },
+        {
+          "id": "MATH-187L",
+          "strand": "Number and Algebra",
+          "no": "10",
+          "text": "Solve problems (given orally or in pictures) involving addition with sums up to 20.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              19
+            ]
+          }
+        },
+        {
+          "id": "MATH-189L",
+          "strand": "Measurement and Geometry",
+          "no": "11",
+          "text": "Identify simple 2-dimensional shapes (triangle, rectangle, square) of different size and in different orientation.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              20
+            ]
+          }
+        },
+        {
+          "id": "MATH-190L",
+          "strand": "Measurement and Geometry",
+          "no": "12",
+          "text": "Compare and distinguish 2-dimensional shapes according to features such as sides and corners.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              21
+            ]
+          }
+        },
+        {
+          "id": "MATH-191L",
+          "strand": "Measurement and Geometry",
+          "no": "13",
+          "text": "Compose and decompose triangles, squares, and rectangles.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              22
+            ]
+          }
+        },
+        {
+          "id": "MATH-192L",
+          "strand": "Measurement and Geometry",
+          "no": "14",
+          "text": "Measure the length of an object and the distance between two objects using non-standard units.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              23
+            ]
+          }
+        },
+        {
+          "id": "MATH-193L",
+          "strand": "Measurement and Geometry",
+          "no": "15",
+          "text": "Compare lengths and distances using non-standard units.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              24
+            ]
+          }
+        },
+        {
+          "id": "MATH-194L",
+          "strand": "Measurement and Geometry",
+          "no": "16",
+          "text": "Solve problems involving lengths and distances using non-standard units.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 MATHEMATICS",
+              25
+            ]
+          }
+        },
+        {
+          "id": "MATH-197L",
+          "strand": "Number and Algebra",
+          "no": "1",
+          "text": "Order numbers up to 100 from smallest to largest, and vice versa.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              26
+            ]
+          }
+        },
+        {
+          "id": "MATH-198L",
+          "strand": "Number and Algebra",
+          "no": "2",
+          "text": "Counts by 2s, 5s and 10s up to 100.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              27
+            ]
+          }
+        },
+        {
+          "id": "MATH-200L",
+          "strand": "Number and Algebra",
+          "no": "3",
+          "text": "a. the place value of a digit in a 2-digit number",
+          "parent": "Determine:",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              28
+            ]
+          }
+        },
+        {
+          "id": "MATH-201L",
+          "strand": "Number and Algebra",
+          "no": "4",
+          "text": "b. the value of a digit",
+          "parent": "Determine:",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              29
+            ]
+          }
+        },
+        {
+          "id": "MATH-202L",
+          "strand": "Number and Algebra",
+          "no": "5",
+          "text": "c. the digit of a number, given its place value",
+          "parent": "Determine:",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              30
+            ]
+          }
+        },
+        {
+          "id": "MATH-203L",
+          "strand": "Number and Algebra",
+          "no": "6",
+          "text": "Decompose any 2-digit number into tens and ones.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              31
+            ]
+          }
+        },
+        {
+          "id": "MATH-204L",
+          "strand": "Number and Algebra",
+          "no": "7",
+          "text": "Add numbers by expressing addends as tens and ones (expanded form).",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              32
+            ]
+          }
+        },
+        {
+          "id": "MATH-205L",
+          "strand": "Number and Algebra",
+          "no": "8",
+          "text": "Add numbers with sums up to 100 without regrouping, using a variety of concrete and pictorial models for: a. 2-digit and 1-digit numbers",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              33
+            ]
+          }
+        },
+        {
+          "id": "MATH-206L",
+          "strand": "Number and Algebra",
+          "no": "8",
+          "text": "b. 2-digit and 2-digit numbers",
+          "parent": "Add numbers with sums up to 100 without regrouping, using a variety of concrete and pictorial models for: a. 2-digit and 1-digit numbers",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              34
+            ]
+          }
+        },
+        {
+          "id": "MATH-207L",
+          "strand": "Number and Algebra",
+          "no": "9",
+          "text": "Solve problems (given orally or in pictures) involving addition with sums up to 100 without regrouping.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              35
+            ]
+          }
+        },
+        {
+          "id": "MATH-208L",
+          "strand": "Number and Algebra",
+          "no": "10",
+          "text": "Illustrate subtraction involving numbers up to 20 using a variety of concrete and pictorial models and describes subtraction as “taking away.”",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              36
+            ]
+          }
+        },
+        {
+          "id": "MATH-209L",
+          "strand": "Number and Algebra",
+          "no": "11",
+          "text": "Find the missing number in addition or subtraction sentences involving numbers up to 20.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              37
+            ]
+          }
+        },
+        {
+          "id": "MATH-210L",
+          "strand": "Number and Algebra",
+          "no": "12",
+          "text": "Write an equivalent expression to a given addition or subtraction expression (e.g., 2+3 = 1+4; 10-5 = 6-1).",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              38
+            ]
+          }
+        },
+        {
+          "id": "MATH-211L",
+          "strand": "Number and Algebra",
+          "no": "13",
+          "text": "Solve subtraction problems (given orally or in pictures) where both numbers are less than 20.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              39
+            ]
+          }
+        },
+        {
+          "id": "MATH-212L",
+          "strand": "Number and Algebra",
+          "no": "14",
+          "text": "Subtract numbers where both numbers are less than 100 using concrete and pictorial models, without regrouping: a. 2-digit minus 1-digit numbers",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              40
+            ]
+          }
+        },
+        {
+          "id": "MATH-213L",
+          "strand": "Number and Algebra",
+          "no": "14",
+          "text": "b. 2-digit minus 2-digit numbers",
+          "parent": "Subtract numbers where both numbers are less than 100 using concrete and pictorial models, without regrouping: a. 2-digit minus 1-digit numbers",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              41
+            ]
+          }
+        },
+        {
+          "id": "MATH-214L",
+          "strand": "Number and Algebra",
+          "no": "15",
+          "text": "Subtract numbers by expressing minuends and subtrahends as tens and ones (expanded form), without regrouping.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              42
+            ]
+          }
+        },
+        {
+          "id": "MATH-216L",
+          "strand": "Data and Probability",
+          "no": "16",
+          "text": "Collect data in one variable through a simple interview.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              43
+            ]
+          }
+        },
+        {
+          "id": "MATH-217L",
+          "strand": "Data and Probability",
+          "no": "17",
+          "text": "Present data in a pictograph without a scale.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              44
+            ]
+          }
+        },
+        {
+          "id": "MATH-218L",
+          "strand": "Data and Probability",
+          "no": "18",
+          "text": "Interpret a pictograph without a scale.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              45
+            ]
+          }
+        },
+        {
+          "id": "MATH-219L",
+          "strand": "Data and Probability",
+          "no": "19",
+          "text": "Organize data in a pictograph without a scale into a table.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 MATHEMATICS",
+              46
+            ]
+          }
+        },
+        {
+          "id": "MATH-222L",
+          "strand": "Number and Algebra",
+          "no": "1",
+          "text": "Determine the next term/s in a repeating pattern (patterns could use rhythmic properties, visual elements in the arts, …)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              47
+            ]
+          }
+        },
+        {
+          "id": "MATH-223L",
+          "strand": "Number and Algebra",
+          "no": "2",
+          "text": "Create repeating patterns using objects, images, or numbers.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              48
+            ]
+          }
+        },
+        {
+          "id": "MATH-224L",
+          "strand": "Number and Algebra",
+          "no": "3",
+          "text": "Illustrate 1/2 and 1/4 as parts of a whole.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              49
+            ]
+          }
+        },
+        {
+          "id": "MATH-225L",
+          "strand": "Number and Algebra",
+          "no": "4",
+          "text": "Compare 1/2 and 1/4 using models.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              50
+            ]
+          }
+        },
+        {
+          "id": "MATH-226L",
+          "strand": "Number and Algebra",
+          "no": "5",
+          "text": "Count halves and quarters.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              51
+            ]
+          }
+        },
+        {
+          "id": "MATH-227L",
+          "strand": "Number and Algebra",
+          "no": "6",
+          "text": "Recognize coins (excluding centavo coins) and bills up to ₱100 and their notations.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              52
+            ]
+          }
+        },
+        {
+          "id": "MATH-228L",
+          "strand": "Number and Algebra",
+          "no": "7",
+          "text": "Determine the value of a number of bills and/or a number of coins (excluding centavo coins) up to ₱100.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              53
+            ]
+          }
+        },
+        {
+          "id": "MATH-229L",
+          "strand": "Number and Algebra",
+          "no": "8",
+          "text": "Compare different denominations of peso coins (excluding centavo coins) and bills up to ₱100.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              54
+            ]
+          }
+        },
+        {
+          "id": "MATH-230L",
+          "strand": "Number and Algebra",
+          "no": "9",
+          "text": "Solve 1-step problems (given orally or in pictures) involving addition of money where the sum is up to ₱100, or subtraction of money where both amounts are less than ₱100.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              55
+            ]
+          }
+        },
+        {
+          "id": "MATH-232L",
+          "strand": "Measurement and Geometry",
+          "no": "10",
+          "text": "Identify the position of objects moved in half turn or in quarter turn, in clockwise or in counter-clockwise direction, given an initial facing direction.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              56
+            ]
+          }
+        },
+        {
+          "id": "MATH-233L",
+          "strand": "Measurement and Geometry",
+          "no": "11",
+          "text": "Read and write time by the hour, half hour, and quarter hour using an analog clock.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              57
+            ]
+          }
+        },
+        {
+          "id": "MATH-234L",
+          "strand": "Measurement and Geometry",
+          "no": "12",
+          "text": "Give the days of the week and months of the year in the correct order.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              58
+            ]
+          }
+        },
+        {
+          "id": "MATH-235L",
+          "strand": "Measurement and Geometry",
+          "no": "13",
+          "text": "Determine the day and month of the year using a calendar.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              59
+            ]
+          }
+        },
+        {
+          "id": "MATH-236L",
+          "strand": "Measurement and Geometry",
+          "no": "14",
+          "text": "Solve problems involving time (hour, half hour, quarter hour, days in a week, and months in a year).",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 MATHEMATICS",
+              60
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "GMRC",
+      "name": "GMRC",
+      "items": [
+        {
+          "id": "GMRC-256L",
+          "strand": "",
+          "no": "1",
+          "text": "Tiwala sa Sarili (Self-Confidence)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 GMRC",
+              9
+            ]
+          }
+        },
+        {
+          "id": "GMRC-257L",
+          "strand": "",
+          "no": "2",
+          "text": "Pagiging Totoo (Sincerity)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 GMRC",
+              10
+            ]
+          }
+        },
+        {
+          "id": "GMRC-258L",
+          "strand": "",
+          "no": "3",
+          "text": "Tiyaga (Perseverance)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 GMRC",
+              11
+            ]
+          }
+        },
+        {
+          "id": "GMRC-259L",
+          "strand": "",
+          "no": "4",
+          "text": "Madasalin (Prayerful)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 GMRC",
+              12
+            ]
+          }
+        },
+        {
+          "id": "GMRC-260L",
+          "strand": "",
+          "no": "5",
+          "text": "Mapagpasalamat (Gratitude)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 GMRC",
+              13
+            ]
+          }
+        },
+        {
+          "id": "GMRC-261L",
+          "strand": "",
+          "no": "6",
+          "text": "Magalang (Respectful)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 GMRC",
+              14
+            ]
+          }
+        },
+        {
+          "id": "GMRC-262L",
+          "strand": "",
+          "no": "7",
+          "text": "Kalinisan (Cleanliness)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "TERM 1-3 GMRC",
+              15
+            ]
+          }
+        },
+        {
+          "id": "GMRC-264L",
+          "strand": "",
+          "no": "1",
+          "text": "Magalang (Respectful)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 GMRC",
+              16
+            ]
+          }
+        },
+        {
+          "id": "GMRC-265L",
+          "strand": "",
+          "no": "2",
+          "text": "Responsable (Responsible)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 GMRC",
+              17
+            ]
+          }
+        },
+        {
+          "id": "GMRC-266L",
+          "strand": "",
+          "no": "3",
+          "text": "Matulungin (Helpful)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 GMRC",
+              18
+            ]
+          }
+        },
+        {
+          "id": "GMRC-267L",
+          "strand": "",
+          "no": "4",
+          "text": "Matulungin (Helpful)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 GMRC",
+              19
+            ]
+          }
+        },
+        {
+          "id": "GMRC-268L",
+          "strand": "",
+          "no": "5",
+          "text": "Madasalin (Prayerful)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 GMRC",
+              20
+            ]
+          }
+        },
+        {
+          "id": "GMRC-269L",
+          "strand": "",
+          "no": "6",
+          "text": "Kalinisan (Cleanliness)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 GMRC",
+              21
+            ]
+          }
+        },
+        {
+          "id": "GMRC-270L",
+          "strand": "",
+          "no": "7",
+          "text": "Masunurin (Obedient)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 GMRC",
+              22
+            ]
+          }
+        },
+        {
+          "id": "GMRC-271L",
+          "strand": "",
+          "no": "8",
+          "text": "Tiwala sa Sarili (Self-Confidence)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 GMRC",
+              23
+            ]
+          }
+        },
+        {
+          "id": "GMRC-272L",
+          "strand": "",
+          "no": "9",
+          "text": "Mapagbigay (Generosity)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "TERM 1-3 GMRC",
+              24
+            ]
+          }
+        },
+        {
+          "id": "GMRC-274L",
+          "strand": "",
+          "no": "1",
+          "text": "Magalang (Respectful)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 GMRC",
+              25
+            ]
+          }
+        },
+        {
+          "id": "GMRC-275L",
+          "strand": "",
+          "no": "2",
+          "text": "Kalinisan (Cleanliness)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 GMRC",
+              26
+            ]
+          }
+        },
+        {
+          "id": "GMRC-276L",
+          "strand": "",
+          "no": "3",
+          "text": "Mapagmalasakit (Compassion)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 GMRC",
+              27
+            ]
+          }
+        },
+        {
+          "id": "GMRC-277L",
+          "strand": "",
+          "no": "4",
+          "text": "Mapagbigay (Generosity)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 GMRC",
+              28
+            ]
+          }
+        },
+        {
+          "id": "GMRC-278L",
+          "strand": "",
+          "no": "5",
+          "text": "Mabuting Mamamayan (Good Citizenship)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 GMRC",
+              29
+            ]
+          }
+        },
+        {
+          "id": "GMRC-279L",
+          "strand": "",
+          "no": "6",
+          "text": "Magalang (Respectful)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 GMRC",
+              30
+            ]
+          }
+        },
+        {
+          "id": "GMRC-280L",
+          "strand": "",
+          "no": "7",
+          "text": "Mapagmalasakit (Compassion)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 GMRC",
+              31
+            ]
+          }
+        },
+        {
+          "id": "GMRC-281L",
+          "strand": "",
+          "no": "8",
+          "text": "Pagmamahal sa Bayan (Love of Country)",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "TERM 1-3 GMRC",
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "MAKA",
+      "name": "Makabansa",
+      "items": [
+        {
+          "id": "MAKA-295L",
+          "strand": "",
+          "no": "1",
+          "text": "a. Katangiang Pisikal",
+          "parent": "Nailalarawan na ang bawat tao ay may iba't-ibang:",
+          "skill": null,
+          "src": {
+            "1": [
+              "G1 PACE FORM MAKABANSA",
+              9
+            ]
+          }
+        },
+        {
+          "id": "MAKA-296L",
+          "strand": "",
+          "no": "1",
+          "text": "b. Pangangailangan",
+          "parent": "Nailalarawan na ang bawat tao ay may iba't-ibang:",
+          "skill": null,
+          "src": {
+            "1": [
+              "G1 PACE FORM MAKABANSA",
+              10
+            ]
+          }
+        },
+        {
+          "id": "MAKA-297L",
+          "strand": "",
+          "no": "2",
+          "text": "Naipaliliwanag ang karapatan at tungkulin ng bawat bata.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "G1 PACE FORM MAKABANSA",
+              11
+            ]
+          }
+        },
+        {
+          "id": "MAKA-298L",
+          "strand": "",
+          "no": "3",
+          "text": "Napahahalagahan ang indibidwalidad ng bawat tao.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "1": [
+              "G1 PACE FORM MAKABANSA",
+              12
+            ]
+          }
+        },
+        {
+          "id": "MAKA-300L",
+          "strand": "",
+          "no": "1",
+          "text": "Naipaliwanag ang konsepto ng pamilya batay sa bumubuo nito tulad ng two-parent, solo parents, extended family, at iba pa.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "G1 PACE FORM MAKABANSA",
+              13
+            ]
+          }
+        },
+        {
+          "id": "MAKA-301L",
+          "strand": "",
+          "no": "2",
+          "text": "Naipaliliwanag ang papel at tungkulin ng mga kasapi ng pamilya.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "G1 PACE FORM MAKABANSA",
+              14
+            ]
+          }
+        },
+        {
+          "id": "MAKA-302L",
+          "strand": "",
+          "no": "3",
+          "text": "Napahahalagahan ang papel at tungkulin ng mga kasapi ng pamilya.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "2": [
+              "G1 PACE FORM MAKABANSA",
+              15
+            ]
+          }
+        },
+        {
+          "id": "MAKA-304L",
+          "strand": "",
+          "no": "1",
+          "text": "Nailalahad ang mga batayang impormasyon tulad ng pangalan, pinagmulan, laki at lawak, kinaroroonan, at kwento ng sariling paaralan.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "G1 PACE FORM MAKABANSA",
+              16
+            ]
+          }
+        },
+        {
+          "id": "MAKA-305L",
+          "strand": "",
+          "no": "2",
+          "text": "Naipaliliwanag ang tungkulin ng mga taong bumubuo sa paaralan tulad ng punong-guro, guro, doctor, nars, dyanitor, mag-aaral at iba pa.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "G1 PACE FORM MAKABANSA",
+              17
+            ]
+          }
+        },
+        {
+          "id": "MAKA-306L",
+          "strand": "",
+          "no": "3",
+          "text": "Natutukoy ang kahalagahan ng mga palatandaan at estruktura mula sa tahanan patungo sa paaralan.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "G1 PACE FORM MAKABANSA",
+              18
+            ]
+          }
+        },
+        {
+          "id": "MAKA-307L",
+          "strand": "",
+          "no": "4",
+          "text": "Napahahalagahan ang sariling paaralan bilang bahagi ng pamayanan.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "G1 PACE FORM MAKABANSA",
+              19
+            ]
+          }
+        },
+        {
+          "id": "MAKA-308L",
+          "strand": "",
+          "no": "5",
+          "text": "Natutukoy ang iba pang kasapi ng pamayanan na umaagapay sa pamilya at paaralan.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "G1 PACE FORM MAKABANSA",
+              20
+            ]
+          }
+        },
+        {
+          "id": "MAKA-309L",
+          "strand": "",
+          "no": "6",
+          "text": "Naipaliliwanag ang papel ng mga kasapi ng kinabibilangang pamayanan.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "G1 PACE FORM MAKABANSA",
+              21
+            ]
+          }
+        },
+        {
+          "id": "MAKA-310L",
+          "strand": "",
+          "no": "7",
+          "text": "Napahahalagahan ang papel ng mga kasapi ng kinabibilangang pamayanan.",
+          "parent": "",
+          "skill": null,
+          "src": {
+            "3": [
+              "G1 PACE FORM MAKABANSA",
+              22
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
