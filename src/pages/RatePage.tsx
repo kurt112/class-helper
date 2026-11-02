@@ -48,6 +48,21 @@ export default function RatePage() {
     void setRatings(l.id, Object.fromEntries(termKeys.map((k, i) => [k, letters[i]])));
     setFilled({ label: `${l.name} (re-rated to ${target})`, entries: [{ id: l.id, before: Object.fromEntries(termKeys.map((k) => [k, l.ratings[k] ?? ''])) }] });
   }
+  // Ticked learners in the grid: re-rate them all at once to the target average.
+  const [ticked, setTicked] = useState<string[]>([]);
+  const tickedLearners = learners.filter((x) => ticked.includes(x.id));
+  const tick = (id: string, on: boolean) => setTicked((t) => (on ? [...t, id] : t.filter((x) => x !== id)));
+  function rerateTicked() {
+    const n = tickedLearners.length;
+    if (!confirm(`Replace the Term ${term} ratings of ${n} ticked learner${n === 1 ? '' : 's'} with new random ratings averaging ${target}? You can undo it.`)) return;
+    const entries = tickedLearners.map((x) => {
+      const letters = randomFill([], termKeys.length, target); // each learner gets their own random mix
+      void setRatings(x.id, Object.fromEntries(termKeys.map((k, i) => [k, letters[i]])));
+      return { id: x.id, before: Object.fromEntries(termKeys.map((k) => [k, x.ratings[k] ?? ''])) };
+    });
+    setFilled({ label: `${n} learner${n === 1 ? '' : 's'} (re-rated to ${target})`, entries });
+    setTicked([]);
+  }
   function fillClass() {
     const n = withBlanks.length;
     if (!confirm(`Fill the blank Term ${term} ratings of ${n} learner${n === 1 ? '' : 's'} so each averages ${target}? Ratings already entered are kept.`)) return;
@@ -188,12 +203,40 @@ export default function RatePage() {
           </div>
 
           <div className="hidden md:block">
-          <p className="mb-3 text-sm text-muted">Use the top row to set a whole column at once.</p>
+          <p className="mb-3 text-sm text-muted">Use the top row to set a whole column at once. Tick learners to re-rate them to a new average.</p>
+          {(ticked.length > 0 || (filled && !fillOpen)) && (
+            <div className="sticky top-0 z-40 mb-3 flex flex-wrap items-center gap-3 rounded-lg border border-board/30 bg-board-soft px-4 py-2.5 text-sm">
+              {ticked.length > 0 ? (
+                <>
+                  <b className="text-board-dark">{ticked.length} ticked</b>
+                  <span className="text-muted">Target average</span>
+                  <Choice label="Target average for ticked learners" value={target} options={LETTERS.map((x) => ({ value: x, label: x }))} onChange={setTarget} />
+                  <span className="text-muted">{LEVELS.find(([k]) => k === target)?.[1]}</span>
+                  <button className="btn-primary" onClick={rerateTicked}>Re-rate {ticked.length} to {target}</button>
+                  <button className="font-bold text-muted hover:text-ink" onClick={() => setTicked([])}>Clear</button>
+                </>
+              ) : (
+                <>
+                  <span className="text-board-dark">Filled random ratings for <b>{filled!.label}</b>.</span>
+                  <button className="font-bold text-board-dark underline-offset-2 hover:underline" onClick={undo}>Undo</button>
+                </>
+              )}
+            </div>
+          )}
           <div className="section max-h-[70dvh] w-fit max-w-full overflow-auto">
             <table className="border-separate border-spacing-0 text-sm">
               <thead>
                 <tr>
-                  <th className="sticky top-0 left-0 z-30 border-r border-b border-line bg-card px-4 py-2 text-left font-bold">Learner</th>
+                  <th className="sticky top-0 left-0 z-30 border-r border-b border-line bg-card px-4 py-2 text-left font-bold">
+                    <label className="flex items-center gap-2">
+                      <input
+                        type="checkbox" className="size-4 accent-board" aria-label="Tick all learners"
+                        checked={ticked.length === learners.length} ref={(el) => { if (el) el.indeterminate = ticked.length > 0 && ticked.length < learners.length; }}
+                        onChange={(e) => setTicked(e.target.checked ? learners.map((x) => x.id) : [])}
+                      />
+                      Learner
+                    </label>
+                  </th>
                   {items.map((it) => (
                     <th
                       key={it.id} title={itemTitle(it)}
@@ -212,7 +255,12 @@ export default function RatePage() {
               <tbody>
                 {learners.map((l) => (
                   <tr key={l.id} className="group">
-                    <th className="sticky left-0 z-10 max-w-[46vw] truncate border-r border-b border-line bg-card px-4 py-1.5 text-left font-normal group-hover:bg-board-soft sm:max-w-xs">{l.name}</th>
+                    <th className={`sticky left-0 z-10 max-w-[46vw] border-r border-b border-line px-4 py-1.5 text-left font-normal group-hover:bg-board-soft sm:max-w-xs ${ticked.includes(l.id) ? 'bg-board-soft' : 'bg-card'}`}>
+                      <label className="flex items-center gap-2">
+                        <input type="checkbox" className="size-4 shrink-0 accent-board" aria-label={`Tick ${l.name}`} checked={ticked.includes(l.id)} onChange={(e) => tick(l.id, e.target.checked)} />
+                        <span className="truncate">{l.name}</span>
+                      </label>
+                    </th>
                     {items.map((it) => {
                       const key = ratingKey(it.id, term);
                       const v = l.ratings[key] ?? '';
