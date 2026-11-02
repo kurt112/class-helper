@@ -28,6 +28,7 @@ const TABS = [
 
 function SignIn() {
   const [error, setError] = useState('');
+  const [agreed, setAgreed] = useState(false);
   async function go() {
     setError('');
     try {
@@ -46,11 +47,29 @@ function SignIn() {
         <div className="mb-6 grid size-12 place-items-center rounded-xl bg-board text-on-board">{icon('M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4M13.5 6.5l4 4')}</div>
         <h1 className="text-3xl font-bold tracking-tight">Elementary Class Record</h1>
         <p className="mt-2 text-muted">ECR, PACE and SF9 for your class in one place. Works offline once you've signed in.</p>
-        <button className="btn-primary mt-8 h-11 w-full text-base" onClick={go}>Sign in with Google</button>
-        <p className="mt-4 text-[13px] text-muted">
-          By signing in you agree to the <a className="font-bold text-board underline-offset-2 hover:underline" href="/terms">Terms and Conditions</a> and
-          acknowledge the <a className="font-bold text-board underline-offset-2 hover:underline" href="/privacy">Data Privacy Notice</a>.
-        </p>
+        {/* The terms must be agreed to before signing in; links open in a new tab so the tick isn't lost. */}
+        <label className="mt-8 flex items-start gap-3 rounded-lg border border-line bg-card p-3 text-sm">
+          <input type="checkbox" className="mt-0.5 size-4 shrink-0 accent-board" checked={agreed} onChange={(e) => setAgreed(e.target.checked)} />
+          <span>
+            I have read and agree to the{' '}
+            <a className="font-bold text-board underline underline-offset-2" href="/terms" target="_blank" rel="noreferrer">Terms and Conditions</a> and the{' '}
+            <a className="font-bold text-board underline underline-offset-2" href="/privacy" target="_blank" rel="noreferrer">Data Privacy Notice</a>.
+          </span>
+        </label>
+        {/* Google-branded button (white, "G" logo) per Google's sign-in branding guidelines */}
+        <button
+          className="mt-4 flex h-11 w-full items-center justify-center gap-3 rounded-full border border-[#747775] bg-white px-4 text-[15px] font-bold text-[#1f1f1f] transition-colors hover:bg-[#f2f2f2] disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:bg-white"
+          disabled={!agreed} onClick={go}
+        >
+          <svg viewBox="0 0 48 48" className="size-5" aria-hidden>
+            <path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z" />
+            <path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z" />
+            <path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z" />
+            <path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z" />
+          </svg>
+          Sign in with Google
+        </button>
+        {!agreed && <p className="mt-2 text-[13px] text-muted">Tick the box above to continue.</p>}
         <p aria-live="polite" className="mt-4 text-sm font-bold text-danger">{error}</p>
       </div>
     </main>
