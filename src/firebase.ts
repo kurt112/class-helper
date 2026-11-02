@@ -1,5 +1,5 @@
 import { initializeApp } from 'firebase/app';
-import { connectAuthEmulator, getAuth } from 'firebase/auth';
+import { connectAuthEmulator, createUserWithEmailAndPassword, getAuth, signInWithEmailAndPassword, updateProfile } from 'firebase/auth';
 import {
   connectFirestoreEmulator,
   initializeFirestore,
@@ -8,7 +8,8 @@ import {
 } from 'firebase/firestore';
 
 const env = import.meta.env;
-const emulators = env.VITE_USE_EMULATORS === '1';
+// Read import.meta.env directly so production builds drop the emulator-only code below entirely.
+const emulators = import.meta.env.VITE_USE_EMULATORS === '1';
 
 const app = initializeApp({
   apiKey: env.VITE_FIREBASE_API_KEY || 'demo-key',
@@ -26,4 +27,14 @@ export const db = initializeFirestore(app, {
 if (emulators) {
   connectAuthEmulator(auth, 'http://127.0.0.1:9099', { disableWarnings: true });
   connectFirestoreEmulator(db, '127.0.0.1', 8080);
+
+  // Recording tutorial videos (local emulators only, add ?demo to the URL): sign in as a fixed fake
+  // teacher so videos never show a real account, and answer "Are you sure?" prompts with yes.
+  if (new URLSearchParams(location.search).has('demo')) {
+    const email = 'demo.teacher@example.com', password = 'demo-teacher-2026';
+    window.confirm = () => true;
+    signInWithEmailAndPassword(auth, email, password).catch(() =>
+      createUserWithEmailAndPassword(auth, email, password).then((c) => updateProfile(c.user, { displayName: 'Teacher Demo' })),
+    );
+  }
 }

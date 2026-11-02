@@ -2,6 +2,7 @@
 
 Web/mobile version of the Grade 1 ECR / PACE / SF9 workbook.
 
+- **Guide** (`/guide`, menu and sign-in screen): every feature step by step with screenshots from the demo class (`src/assets/guide/`); readable before signing in.
 - **Classes**: switch classes from the dropdown at the top of the sidebar (top bar on phones); "+ New class" starts one with the same school details. Each class has its own learners, ratings, notes and attendance. Delete a class on the Class page (you type its section name to confirm). **Archive class** (Class page) moves a past year's class under "Archived" in the menu, kept for records; **Settings → Archive by school year** archives every class of a year at once; once a class's last day of SY has passed the Class page suggests it, and "+ New class" then starts in the next school year.
 - **Class**: school info, SY dates (ages are computed from these), class days per month, learners, **Import Excel** (reads the original workbook: learners, all ratings, notes, attendance).
 - **Import**: add learners from the downloadable **Excel template** (Male and Female sheets, LRN and birthdate columns pre-set to Text; one upload fills both lists) or from two CSV files, one for male and one for female learners. Columns: whole name (`LASTNAME, FIRSTNAME, MIDDLENAME`), LRN, birthdate (`YYYY-MM-DD` or `MM/DD/YYYY`). Shows a preview with problem rows first; learners already in the class are skipped, never overwritten.

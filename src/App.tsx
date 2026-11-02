@@ -10,6 +10,7 @@ import PrintMenu from './pages/PrintMenu';
 import ImportPage from './pages/ImportPage';
 import SettingsPage from './pages/SettingsPage';
 import LegalPage from './pages/LegalPage';
+import GuidePage from './pages/GuidePage';
 import './app.css';
 
 const icon = (d: string) => (
@@ -23,6 +24,7 @@ const TABS = [
   { to: '/rate', label: 'Rate', icon: icon('M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4M13.5 6.5l4 4') },
   { to: '/notes', label: 'Notes', icon: icon('M21 12a8 8 0 0 1-11.6 7.1L3 21l1.9-6.4A8 8 0 1 1 21 12') },
   { to: '/forms', label: 'Forms', icon: icon('M6 9V3h12v6M6 18H4a1 1 0 0 1-1-1v-6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a1 1 0 0 1-1 1h-2M6 14h12v7H6z') },
+  { to: '/guide', label: 'Guide', icon: icon('M2 4h6a4 4 0 0 1 4 4v13a3 3 0 0 0-3-3H2zM22 4h-6a4 4 0 0 0-4 4v13a3 3 0 0 1 3-3h7z') },
   { to: '/settings', label: 'Settings', icon: icon('M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1') },
 ];
 
@@ -71,6 +73,9 @@ function SignIn() {
         </button>
         {!agreed && <p className="mt-2 text-[13px] text-muted">Tick the box above to continue.</p>}
         <p aria-live="polite" className="mt-4 text-sm font-bold text-danger">{error}</p>
+        <p className="mt-6 text-sm text-muted">
+          New here? <a className="font-bold text-board underline-offset-2 hover:underline" href="/guide">Read the guide</a> to see every feature first.
+        </p>
       </div>
     </main>
   );
@@ -100,6 +105,8 @@ export default function App() {
   // Terms and privacy can be read before signing in.
   const legal = location.pathname.match(/^\/(terms|privacy)\/?$/)?.[1] as 'terms' | 'privacy' | undefined;
   if (legal) return <LegalPage doc={legal} />;
+  // The guide can be read before signing in too; signed in, it opens inside the app.
+  if (/^\/guide\/?$/.test(location.pathname) && !user && !AUTH_DISABLED && user !== undefined) return <GuidePage />;
   if (user === undefined) return <main className="grid min-h-dvh place-items-center text-muted">Loading…</main>;
   if (!user && !AUTH_DISABLED) return <SignIn />;
   return (
@@ -118,7 +125,7 @@ export default function App() {
             <p className="truncate text-[13px] text-muted">{user.email}</p>
             <button className="btn-ghost mt-3 w-full" onClick={() => signOut(auth)}>Sign out</button>
           </div>}
-          <ul className="grid grid-cols-6 md:block md:space-y-1 md:px-3">
+          <ul className="grid grid-cols-7 md:block md:space-y-1 md:px-3">
             {TABS.map((t) => (
               <li key={t.to}>
                 <NavLink
@@ -142,6 +149,7 @@ export default function App() {
             <Route exact path="/notes" component={NotesPage} />
             <Route exact path="/forms" component={PrintMenu} />
             <Route exact path="/settings" component={SettingsPage} />
+            <Route exact path="/guide" component={GuidePage} />
             <Redirect to="/class" />
           </Switch>
         </main>

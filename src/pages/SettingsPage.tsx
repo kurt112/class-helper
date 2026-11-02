@@ -58,7 +58,8 @@ export default function SettingsPage() {
       <section className="section mt-6 max-w-3xl">
         <div className="section-head"><h2 className="font-bold">About</h2></div>
         <p className="px-5 py-4 text-sm text-muted">
-          Elementary Class Record is a free tool for educational use. It is not an official DepEd system. Read the{' '}
+          Elementary Class Record is a free tool for educational use. It is not an official DepEd system. See the{' '}
+          <a className="font-bold text-board underline-offset-2 hover:underline" href="/guide">Guide</a> for how to use every feature, and read the{' '}
           <a className="font-bold text-board underline-offset-2 hover:underline" href="/terms">Terms and Conditions</a> and the{' '}
           <a className="font-bold text-board underline-offset-2 hover:underline" href="/privacy">Data Privacy Notice</a>.
         </p>
