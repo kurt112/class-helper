@@ -1,13 +1,9 @@
 import { AUTH_DISABLED, useStore } from '../store';
 import { ageAt } from '../lib/age';
-import { SKILLS, SKILL_COLORS, SUBJECTS, TERMS, ratingKey } from '../types';
+import { LEVELS, SKILLS, SKILL_COLORS, SUBJECTS, TERMS, ratingKey } from '../types';
 import type { ClassInfo, Learner } from '../types';
 import '../print.css';
 
-const LEVELS = [
-  ['A', 'Advancing (Namumukod-tangi)'], ['B', 'Benchmarking (Naipamamalas)'], ['C', 'Connecting (Natutungo)'],
-  ['D', 'Developing (Nagpapaunlad)'], ['E', 'Emerging (Nagsisimula)'],
-];
 const TERM_NAMES = { 1: 'TERM 1 (UNANG TERMINO)', 2: 'TERM 2 (IKALAWANG TERMINO)', 3: 'TERM 3 (IKATLONG TERMINO)' };
 
 export default function PrintPage() {

@@ -4,6 +4,11 @@ export type Term = '1' | '2' | '3';
 export type Letter = 'A' | 'B' | 'C' | 'D' | 'E';
 export const TERMS: Term[] = ['1', '2', '3'];
 export const LETTERS: Letter[] = ['A', 'B', 'C', 'D', 'E'];
+/** DepEd descriptors for the rating levels, as on the PACE and SF9 forms */
+export const LEVELS: [Letter, string][] = [
+  ['A', 'Advancing (Namumukod-tangi)'], ['B', 'Benchmarking (Naipamamalas)'], ['C', 'Connecting (Natutungo)'],
+  ['D', 'Developing (Nagpapaunlad)'], ['E', 'Emerging (Nagsisimula)'],
+];
 
 export interface Item {
   id: string;

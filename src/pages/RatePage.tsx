@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useStore } from '../store';
 import { mean, meanLetter, randomFill } from '../lib/randomFill';
-import { LETTERS, SKILLS, SKILL_COLORS, SUBJECTS, TERMS, ratingKey } from '../types';
+import { LETTERS, LEVELS, SKILLS, SKILL_COLORS, SUBJECTS, TERMS, ratingKey } from '../types';
 import type { Item, Letter, Term } from '../types';
 import { Choice, Empty, LearnerPicker, Page } from '../ui';
 
@@ -24,7 +24,8 @@ export default function RatePage() {
   const [fillOpen, setFillOpen] = useState(false);
   const [target, setTarget] = useState<Letter>('B');
   // The last fill, so it can be undone: which learners got which rating keys.
-  const [filled, setFilled] = useState<{ label: string; entries: { id: string; keys: string[] }[] } | null>(null);
+  // The last fill, so it can be undone: each learner's ratings before it ('' = was blank).
+  const [filled, setFilled] = useState<{ label: string; entries: { id: string; before: Record<string, string> }[] } | null>(null);
 
   // Every competency of every subject in this term: the scope of the learner's term average.
   const termKeys = SUBJECTS.flatMap((s) => s.items.filter((i) => i.src[term]).map((i) => ratingKey(i.id, term)));
@@ -38,7 +39,14 @@ export default function RatePage() {
     const blanks = termKeys.filter((k) => !l.ratings[k]);
     const letters = randomFill(termRated, blanks.length, target);
     void setRatings(l.id, Object.fromEntries(blanks.map((k, i) => [k, letters[i]])));
-    setFilled({ label: l.name, entries: [{ id: l.id, keys: blanks }] });
+    setFilled({ label: l.name, entries: [{ id: l.id, before: Object.fromEntries(blanks.map((k) => [k, ''])) }] });
+  }
+  // Already rated: replace all this term's ratings with new random ones averaging the clicked target.
+  function rerate() {
+    if (!confirm(`Replace all ${termRated.length} Term ${term} ratings of ${l.name} with new random ratings averaging ${target}? You can undo it.`)) return;
+    const letters = randomFill([], termKeys.length, target);
+    void setRatings(l.id, Object.fromEntries(termKeys.map((k, i) => [k, letters[i]])));
+    setFilled({ label: `${l.name} (re-rated to ${target})`, entries: [{ id: l.id, before: Object.fromEntries(termKeys.map((k) => [k, l.ratings[k] ?? ''])) }] });
   }
   function fillClass() {
     const n = withBlanks.length;
@@ -48,12 +56,12 @@ export default function RatePage() {
       const blanks = termKeys.filter((k) => !x.ratings[k]);
       const letters = randomFill(rated, blanks.length, target); // fresh random letters per learner
       void setRatings(x.id, Object.fromEntries(blanks.map((k, i) => [k, letters[i]])));
-      return { id: x.id, keys: blanks };
+      return { id: x.id, before: Object.fromEntries(blanks.map((k) => [k, ''])) };
     });
     setFilled({ label: `${n} learner${n === 1 ? '' : 's'}`, entries });
   }
   function undo() {
-    for (const e of filled?.entries ?? []) void setRatings(e.id, Object.fromEntries(e.keys.map((k) => [k, ''])));
+    for (const e of filled?.entries ?? []) void setRatings(e.id, e.before);
     setFilled(null);
   }
 
@@ -84,10 +92,20 @@ export default function RatePage() {
             <button className="btn-primary" disabled={termRated.length === termKeys.length} onClick={fill}>
               Fill {termKeys.length - termRated.length} blanks
             </button>
+            {termRated.length > 0 && (
+              <button className="btn-ghost" onClick={rerate} title="Replace this learner's ratings for the term">Re-rate all to {target}</button>
+            )}
           </div>
+          <ul aria-label="Rating levels" className="mt-3 flex flex-wrap gap-x-4 gap-y-1 text-[13px]">
+            {LEVELS.map(([k, d]) => (
+              <li key={k} className={k === target ? 'font-bold text-board-dark' : 'text-muted'}>
+                <b className={`mr-1 inline-grid size-5 place-items-center rounded ${k === target ? 'bg-board text-on-board' : 'bg-board-soft text-ink'}`}>{k}</b>{d}
+              </li>
+            ))}
+          </ul>
           <p className="mt-3 text-[13px] text-muted">
             Gives every unrated competency in Term {term}, across all subjects, a random rating so the term average comes out to {target}.
-            Ratings you already entered stay as they are.
+            Ratings you already entered stay as they are. Re-rate all replaces this learner's Term {term} ratings so the average becomes {target}.
           </p>
           <p aria-live="polite" className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm">
             <span>
