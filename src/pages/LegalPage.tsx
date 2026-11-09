@@ -26,7 +26,7 @@ function Terms() {
       <H>1. What the app is</H>
       <P>
         A tool for Grade 1 teachers in the Philippines to keep the Electronic Class Record (ECR), the PACE form and the SF9 report card,
-        made for educational use. Using it is free; an optional paid Pro plan adds features (see section 6). It is <b>not an official system of the Department of Education (DepEd)</b> and is not
+        made for educational use. It is free to use and supported by voluntary donations (see section 6). It is <b>not an official system of the Department of Education (DepEd)</b> and is not
         endorsed by DepEd. The official forms and DepEd policies always take precedence.
       </P>
 
@@ -52,16 +52,11 @@ function Terms() {
       <H>5. Acceptable use</H>
       <P>Do not use the app to store information unrelated to class records, to access other teachers' classes, to disrupt the service, or for any unlawful purpose.</P>
 
-      <H>6. Pro plan and payment</H>
-      <div id="pro" className="scroll-mt-6" />
+      <H>6. Donations</H>
       <L items={[
-        <>Pro costs <b>₱249 per school year</b> per teacher, paid <b>in cash, in person</b>, to the app administrator. The app never asks for payment online, by text message or through other people.</>,
-        'Ask for an acknowledgement receipt when you pay. Pro is activated for the Google email you give, usually the same day, and lasts until the end date shown on your Pro page (normally July 31, the end of the school year).',
-        'Pro does not renew by itself. When it ends, the app goes back to the free plan: nothing is deleted, and all your classes, including extra ones, can still be opened, printed and exported.',
-        <>Refunds: if Pro was not activated, or you ask within <b>7 days</b> of activation, you get your money back in full. After that, payments are not refundable, except where the law requires.</>,
-        'If the app stops being offered before your Pro end date, the unused part of your payment is refunded, in proportion to the months left.',
-        'Prices may change for future school years; a change never affects a period you already paid for.',
-        'Pro is for the teacher who paid and cannot be shared or transferred.',
+        'The app is free. Donations by InstaPay (GCash, Maya or a bank app), using the QR code on the Support page, are voluntary gifts to the app\'s developer.',
+        'A donation does not buy a service, unlock any feature or create any obligation, and it is not refundable.',
+        'The app never asks for money by message, call or through other people. Only use the QR code shown in the app.',
       ]} />
 
       <H>7. No warranty</H>
@@ -71,7 +66,7 @@ function Terms() {
       </P>
 
       <H>8. Limitation of liability</H>
-      <P>To the extent allowed by law, the app's operators are not liable for lost data, wrong ratings or other damages arising from the use of the app, and their total liability to you is limited to the amount you paid for Pro in the last 12 months. Keep backups of important records.</P>
+      <P>To the extent allowed by law, the app's operators are not liable for lost data, wrong ratings or other damages arising from the use of the app. Keep backups of important records.</P>
 
       <H>9. Ending use</H>
       <P>You may stop using the app at any time. Deleting a class removes it and its learners from the database. To have your account and all your classes removed, contact <Contact />.</P>
@@ -105,9 +100,12 @@ function Privacy() {
         <><b>Teacher account:</b> your name, email address, profile photo and account ID, from Google Sign-In.</>,
         <><b>Learner records you enter:</b> name, LRN, sex and birthdate; ratings for each competency; teacher comments; days present.</>,
         <><b>School details you enter:</b> region, division, district, school name and ID, school head, adviser, section, school year and class days.</>,
-        <><b>Pro plan record:</b> if you buy Pro, your email, the Pro end date, the amount paid and a short note (such as the receipt number or your school), entered by the administrator.</>,
         <><b>Templates you upload:</b> Excel workbooks used for export. Learner data inside an uploaded workbook is removed before it is saved.</>,
       ]} />
+      <P>
+        Donations are made in GCash, Maya or a bank app, not in the app. The app does not receive or store any donor information; the developer sees
+        only what the bank or e-wallet shows the recipient of a transfer, such as the sender's name.
+      </P>
       <P>The app does <b>not</b> collect location, contacts or browsing activity. It has <b>no advertising, no analytics or tracking</b>, and it does not sell or rent any information.</P>
 
       <H>3. Why it is processed</H>
@@ -128,7 +126,7 @@ function Privacy() {
       <L items={[
         'Only the teacher signed in with the account that owns a class can open it. Other teachers cannot see your classes.',
         'Google, as the hosting and sign-in provider, processes the data to run the service, under its own security and privacy commitments.',
-        'The app administrator sees Pro plan records to activate Pro. The administrator can technically access the database for maintenance, and does so only to provide support you ask for or when required by law.',
+        'The app administrator can technically access the database for maintenance, and does so only to provide support you ask for or when required by law.',
         'Records are not shared with anyone else unless required by law. Sharing exported files is your decision and responsibility.',
       ]} />
 
@@ -142,8 +140,7 @@ function Privacy() {
       <P>
         Records stay until you delete them. Archiving a class keeps it for your records. Deleting a class permanently removes it and its learners
         from the online database; copies kept in a browser are removed when that browser's site data is cleared. Keep records for as long as your
-        school and DepEd require, and delete them when they are no longer needed. Pro plan records are kept as long as tax and
-        accounting rules require, even after Pro ends.
+        school and DepEd require, and delete them when they are no longer needed.
       </P>
 
       <H>8. Your rights</H>

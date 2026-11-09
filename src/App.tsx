@@ -2,7 +2,7 @@ import { BrowserRouter, NavLink, Redirect, Route, Switch, useHistory } from 'rea
 import { useState } from 'react';
 import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { auth } from './firebase';
-import { AUTH_DISABLED, classLabel, useStore } from './store';
+import { AUTH_DISABLED, PRO_ENABLED, classLabel, useStore } from './store';
 import ClassPage from './pages/ClassPage';
 import RatePage from './pages/RatePage';
 import NotesPage from './pages/NotesPage';
@@ -13,6 +13,7 @@ import LegalPage from './pages/LegalPage';
 import GuidePage from './pages/GuidePage';
 import LandingPage from './pages/LandingPage';
 import { AdminPage, ProPage } from './pages/ProPage';
+import SupportPage from './pages/SupportPage';
 import './app.css';
 
 const icon = (d: string) => (
@@ -110,8 +111,9 @@ export default function App() {
   // Terms and privacy can be read before signing in.
   const legal = location.pathname.match(/^\/(terms|privacy)\/?$/)?.[1] as 'terms' | 'privacy' | undefined;
   if (legal) return <LegalPage doc={legal} />;
-  // The guide can be read before signing in too; signed in, it opens inside the app.
-  if (/^\/guide\/?$/.test(location.pathname) && !user && !AUTH_DISABLED && user !== undefined) return <GuidePage />;
+  // The guide and the support page can be read before signing in too; signed in, they open inside the app.
+  if (/^\/(guide|support)\/?$/.test(location.pathname) && !user && !AUTH_DISABLED && user !== undefined)
+    return location.pathname.startsWith('/guide') ? <GuidePage /> : <SupportPage />;
   // Signed-out visitors to the home page see the landing page; "Sign in" there goes to /class.
   if (location.pathname === '/' && !user && !AUTH_DISABLED && user !== undefined) return <LandingPage />;
   if (user === undefined) return <main className="grid min-h-dvh place-items-center text-muted">Loading…</main>;
@@ -131,8 +133,10 @@ export default function App() {
             <p className="truncate text-[13px] font-bold">{user.displayName ?? 'Teacher'}</p>
             <p className="truncate text-[13px] text-muted">{user.email}</p>
             <p className="mt-2 flex gap-3 text-[13px] font-bold">
-              <NavLink to="/pro" className="text-board hover:underline">{pro ? 'Pro plan' : 'Free plan · Get Pro'}</NavLink>
-              {isAdmin && <NavLink to="/admin" className="text-board hover:underline">Admin</NavLink>}
+              {PRO_ENABLED
+                ? <NavLink to="/pro" className="text-board hover:underline">{pro ? 'Pro plan' : 'Free plan · Get Pro'}</NavLink>
+                : <NavLink to="/support" className="text-board hover:underline">♥ Support this app</NavLink>}
+              {PRO_ENABLED && isAdmin && <NavLink to="/admin" className="text-board hover:underline">Admin</NavLink>}
             </p>
             <button className="btn-ghost mt-3 w-full" onClick={() => signOut(auth)}>Sign out</button>
           </div>}
@@ -161,6 +165,7 @@ export default function App() {
             <Route exact path="/forms" component={PrintMenu} />
             <Route exact path="/settings" component={SettingsPage} />
             <Route exact path="/guide" component={GuidePage} />
+            <Route exact path="/support" component={SupportPage} />
             <Route exact path="/pro" component={ProPage} />
             <Route exact path="/admin" component={AdminPage} />
             <Redirect to="/class" />

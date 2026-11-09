@@ -57,6 +57,8 @@ export const AUTH_DISABLED = false;
 /** Activates Pro for teachers; must match isAdmin() in firestore.rules. */
 export const ADMIN_EMAIL = 'designscribe.solution@gmail.com';
 export const PRO_PRICE = '₱249';
+/** Off = every feature is free for everyone (donations instead). Turn on to bring back the paid Pro plan. */
+export const PRO_ENABLED = false;
 /** Today as YYYY-MM-DD in local time, to compare with license end dates. */
 export const today = () => new Date().toLocaleDateString('en-CA');
 
@@ -104,7 +106,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
     return onSnapshot(doc(db, 'licenses', email), (s) => setProUntil(s.data()?.until), () => setProUntil(undefined));
   }, [email]);
   const isAdmin = !!user?.emailVerified && email === ADMIN_EMAIL;
-  const pro = AUTH_DISABLED || isAdmin || (!!proUntil && proUntil >= today());
+  const pro = !PRO_ENABLED || AUTH_DISABLED || isAdmin || (!!proUntil && proUntil >= today());
 
   const classId = classes.some((c) => c.id === chosen) ? chosen : classes[0]?.id;
 

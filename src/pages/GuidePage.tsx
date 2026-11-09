@@ -28,7 +28,7 @@ const SECTIONS: Section[] = [
     id: 'classes', title: 'Your classes', image: classes, small: true, alt: 'The class menu at the top of the sidebar',
     steps: [
       <>Switch classes with the <b>class menu</b> at the top of the sidebar (on a phone, at the top of the screen).</>,
-      <>Pick <b>+ New class</b> to add one (more than one active class needs Pro). It copies your school details; once a school year has ended, the new class starts in the next school year.</>,
+      <>Pick <b>+ New class</b> to add one. It copies your school details; once a school year has ended, the new class starts in the next school year.</>,
       <><b>Archive class</b> (Class page) keeps a past class for your records under "Archived" in the menu.</>,
       <><b>Delete class</b> asks you to type the section name first, because it erases everything in that class.</>,
     ],
@@ -70,7 +70,7 @@ const SECTIONS: Section[] = [
       <><b>Re-rate all to</b> a letter replaces that learner's ratings for the term to reach a new average.</>,
       <><b>Undo fill</b> puts back exactly what was there before.</>,
     ],
-    tip: 'Random fill and Re-rate are Pro features. You are responsible for every rating: review filled ratings before printing.',
+    tip: 'You are responsible for every rating: review filled ratings before printing.',
   },
   {
     id: 'tick', title: 'Re-rate several learners', image: rerate, alt: 'Ticked learners and the Re-rate bar above the grid',

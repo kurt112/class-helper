@@ -18,7 +18,7 @@ const pencil = (
 
 const FEATURES = [
   ['Rate A to E in minutes', 'Every Grade 1 competency per subject, term and strand. One tap per learner, or the whole class at once.'],
-  ['Random fill to a target (Pro)', 'Fill unrated competencies so a learner’s average lands on the letter you choose. Undo anytime.'],
+  ['Random fill to a target', 'Fill unrated competencies so a learner’s average lands on the letter you choose. Undo anytime.'],
   ['Official DepEd workbook', 'Export the filled ECR, PACE and SF9 Excel file, formatting kept, or a zip of all your classes.'],
   ['Import from Excel', 'Download the template, list boys and girls, drop the file in. Numbers and CSV work too.'],
   ['Works offline', 'Keep rating on weak school wifi. Changes sync when you’re back online.'],
@@ -62,7 +62,7 @@ export default function LandingPage() {
             Your ECR, PACE and SF9, done in one place
           </h1>
           <p className="mx-auto mt-5 max-w-2xl text-lg text-muted text-pretty">
-            Rate learners, write report-card notes and export the official DepEd workbook. Free to start, and it works even without internet.
+            Rate learners, write report-card notes and export the official DepEd workbook. Free, and it works even without internet.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a href="/class" className="btn-primary h-11 px-5 text-[15px]">Open the web app</a>
@@ -135,11 +135,12 @@ export default function LandingPage() {
       </main>
 
       <footer className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-8 text-sm text-muted sm:px-8">
-        <p>Free to use, with an optional Pro plan. Not an official DepEd system.</p>
+        <p>Free for every teacher, supported by donations. Not an official DepEd system.</p>
         <nav className="flex gap-5">
           <a className={link} href="/guide">Guide</a>
           <a className={link} href="/terms">Terms</a>
           <a className={link} href="/privacy">Privacy</a>
+          <a className={link} href="/support">Donate</a>
           <a className={link} href="mailto:designscribe.solution@gmail.com">Contact</a>
         </nav>
       </footer>

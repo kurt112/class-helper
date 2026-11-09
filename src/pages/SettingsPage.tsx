@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { PRO_PRICE, classLabel, useStore } from '../store';
+import { PRO_ENABLED, PRO_PRICE, classLabel, useStore } from '../store';
 import { Empty, Page } from '../ui';
 
 // Chrome/Edge fire this once at page load, before Settings opens, so catch it at module load.
@@ -68,7 +68,17 @@ export default function SettingsPage() {
         </p>
       </section>
 
-      <section className="section mt-6 max-w-3xl">
+      {!PRO_ENABLED && (
+        <section className="section mt-6 max-w-3xl">
+          <div className="section-head"><h2 className="font-bold">Support this app</h2></div>
+          <div className="flex flex-wrap items-center gap-3 px-5 py-4">
+            <p className="min-w-0 flex-1 text-sm text-muted">Every feature is free. If the app helps you, an optional donation by GCash, Maya or bank transfer keeps it running.</p>
+            <Link className="btn-ghost" to="/support">♥ Donate</Link>
+          </div>
+        </section>
+      )}
+
+      {PRO_ENABLED && <section className="section mt-6 max-w-3xl">
         <div className="section-head"><h2 className="font-bold">Plan</h2></div>
         <div className="flex flex-wrap items-center gap-3 px-5 py-4">
           <p className="min-w-0 flex-1 text-sm text-muted">
@@ -77,7 +87,7 @@ export default function SettingsPage() {
           <Link className="btn-ghost" to="/pro">{pro ? 'View plan' : 'Get Pro'}</Link>
           {isAdmin && <Link className="btn-primary" to="/admin">Admin</Link>}
         </div>
-      </section>
+      </section>}
 
       <section className="section mt-6 max-w-3xl">
         <div className="section-head"><h2 className="font-bold">Install on this computer</h2></div>
@@ -96,7 +106,7 @@ export default function SettingsPage() {
       <section className="section mt-6 max-w-3xl">
         <div className="section-head"><h2 className="font-bold">About</h2></div>
         <p className="px-5 py-4 text-sm text-muted">
-          Elementary Class Record is free to use, with an optional paid Pro plan. It is not an official DepEd system. See the{' '}
+          Elementary Class Record is free to use and supported by donations. It is not an official DepEd system. See the{' '}
           <a className="font-bold text-board underline-offset-2 hover:underline" href="/guide">Guide</a> for how to use every feature, and read the{' '}
           <a className="font-bold text-board underline-offset-2 hover:underline" href="/terms">Terms and Conditions</a> and the{' '}
           <a className="font-bold text-board underline-offset-2 hover:underline" href="/privacy">Data Privacy Notice</a>.

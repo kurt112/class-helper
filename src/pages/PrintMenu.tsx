@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { useStore } from '../store';
+import { Link } from 'react-router-dom';
+import { PRO_ENABLED, useStore } from '../store';
 import { SUBJECTS, TERMS, ratingKey } from '../types';
 import { Page } from '../ui';
 import { ProLink } from './ProPage';
@@ -163,7 +164,7 @@ export default function PrintMenu() {
             )}
           </div>
           <p aria-live="polite">
-            {notice && <span className={`block rounded-lg px-4 py-2.5 text-sm font-bold ${notice.error ? 'bg-danger/10 text-danger' : 'bg-board-soft text-board-dark'}`}>{notice.text}</span>}
+            {notice && <span className={`block rounded-lg px-4 py-2.5 text-sm font-bold ${notice.error ? 'bg-danger/10 text-danger' : 'bg-board-soft text-board-dark'}`}>{notice.text}{!notice.error && !PRO_ENABLED && <> Saved you time? <Link className="underline" to="/support">Support the app</Link>.</>}</span>}
           </p>
         </div>
       </section>
