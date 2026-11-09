@@ -1,0 +1,25 @@
+{
+  "name": "elementary-class-record",
+  "productName": "Elementary Class Record",
+  "version": "1.0.0",
+  "description": "ECR, PACE and SF9 for your class in one place.",
+  "author": "DesignScribe Solution <designscribe.solution@gmail.com>",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron .",
+    "dist:mac": "electron-builder --mac",
+    "dist:win": "electron-builder --win"
+  },
+  "build": {
+    "appId": "com.designscribe.elementaryclassrecord",
+    "files": ["main.js"],
+    "mac": { "target": { "target": "dmg", "arch": ["universal"] }, "category": "public.app-category.education", "artifactName": "Elementary-Class-Record-mac.${ext}" },
+    "win": { "target": { "target": "nsis", "arch": ["x64"] }, "artifactName": "Elementary-Class-Record-Setup.${ext}" },
+    "nsis": { "oneClick": true, "perMachine": false }
+  },
+  "devDependencies": {
+    "electron": "45.2.3",
+    "electron-builder": "26.18.0"
+  }
+}

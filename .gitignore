@@ -2,3 +2,5 @@ node_modules
 dist
 .env.local
 *.xlsx
+desktop/node_modules
+desktop/dist

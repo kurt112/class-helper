@@ -11,6 +11,7 @@ import ImportPage from './pages/ImportPage';
 import SettingsPage from './pages/SettingsPage';
 import LegalPage from './pages/LegalPage';
 import GuidePage from './pages/GuidePage';
+import LandingPage from './pages/LandingPage';
 import './app.css';
 
 const icon = (d: string) => (
@@ -107,6 +108,8 @@ export default function App() {
   if (legal) return <LegalPage doc={legal} />;
   // The guide can be read before signing in too; signed in, it opens inside the app.
   if (/^\/guide\/?$/.test(location.pathname) && !user && !AUTH_DISABLED && user !== undefined) return <GuidePage />;
+  // Signed-out visitors to the home page see the landing page; "Sign in" there goes to /class.
+  if (location.pathname === '/' && !user && !AUTH_DISABLED && user !== undefined) return <LandingPage />;
   if (user === undefined) return <main className="grid min-h-dvh place-items-center text-muted">Loading…</main>;
   if (!user && !AUTH_DISABLED) return <SignIn />;
   return (

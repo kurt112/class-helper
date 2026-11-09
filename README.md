@@ -68,3 +68,15 @@ but the PACE Term 3 formulas never shifted; three formulas read the wrong sheet 
 and 3c, 13b and 19 Speaking had no formula for some terms. Competency columns are now taken from the class-summary headers and colours,
 and the template's PACE formulas were corrected to match (69 formulas). If you rebuild the template from a new DepEd file,
 `npm test` (the "template PACE sheet" test) fails until the PACE formulas agree with `competencies.json` again.
+
+## Desktop app (Electron)
+
+`desktop/` wraps the hosted app in a window. Build the installers (run from a normal terminal, not VS Code's, which sets `ELECTRON_RUN_AS_NODE`):
+
+```bash
+cd desktop && npm install
+npm run dist:mac   # dist/Elementary-Class-Record-mac.dmg
+npm run dist:win   # dist/Elementary-Class-Record-Setup.exe
+```
+
+Upload both files to a GitHub release on kurt112/class-helper; the landing page links to `releases/latest/download/<file>`.
