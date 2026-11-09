@@ -2,7 +2,7 @@
 // cache live in this app's own storage, so it keeps working offline after the first sign-in.
 const { app, BrowserWindow, shell } = require('electron');
 
-const APP_URL = 'https://class-helper-f79f7.web.app';
+const APP_URL = 'https://ecr-ph.web.app';
 const APP_HOST = new URL(APP_URL).host;
 // Google refuses sign-in from browsers that say "Electron", so present as plain Chrome.
 const USER_AGENT = `Mozilla/5.0 (${process.platform === 'darwin' ? 'Macintosh; Intel Mac OS X 10_15_7' : 'Windows NT 10.0; Win64; x64'}) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/${process.versions.chrome} Safari/537.36`;
