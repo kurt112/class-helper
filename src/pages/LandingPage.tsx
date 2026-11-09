@@ -67,6 +67,7 @@ export default function LandingPage() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <a href="/class" className="btn-primary h-11 px-5 text-[15px]">Open the web app</a>
             <Download which={os} />
+            <Download which={other} />
           </div>
           <img src={rate} alt="Rating learners A to E for each competency" className="mx-auto mt-12 w-full max-w-5xl rounded-xl border border-line shadow-lg" />
         </section>
