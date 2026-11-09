@@ -1,10 +1,13 @@
 import type { ReactNode } from 'react';
 import { Page } from '../ui';
 
-// Fill these in before teachers use the app: shown on both pages as the person to contact.
+// Shown on both pages as the person to contact.
 const CONTACT_NAME = 'the app administrator';
 const CONTACT_EMAIL = 'designscribe.solution@gmail.com';
-const UPDATED = 'November 2, 2026';
+const UPDATED = 'November 9, 2026';
+/** The registered business that operates the app (Internet Transactions Act, Data Privacy Act). */
+const BUSINESS = 'DesignScribe IT Consultancy (DTI Business Name No. 7934410), owned by Kurt Lupin Concepcion Orioque';
+const DPO = 'Kurt Lupin Concepcion Orioque';
 
 const Contact = () =>
   CONTACT_EMAIL
@@ -18,7 +21,7 @@ const L = ({ items }: { items: ReactNode[] }) => <ul className="mt-2 list-disc s
 function Terms() {
   return (
     <>
-      <P>These terms apply to the Elementary Class Record app ("the app"). By signing in you agree to them. If you do not agree, do not use the app.</P>
+      <P>These terms apply to the Elementary Class Record app ("the app"), operated by {BUSINESS}, a business name registered in the Philippines with the Department of Trade and Industry. By signing in you agree to them. If you do not agree, do not use the app.</P>
 
       <H>1. What the app is</H>
       <P>
@@ -65,7 +68,7 @@ function Terms() {
       <P>These terms may be updated. The date below shows the latest version; continuing to use the app after a change means you accept it.</P>
 
       <H>10. Governing law and contact</H>
-      <P>These terms are governed by the laws of the Republic of the Philippines. Questions: <Contact />.</P>
+      <P>These terms are governed by the laws of the Republic of the Philippines, and any dispute will be brought before the proper courts of the Philippines. Questions: <Contact />.</P>
     </>
   );
 }
@@ -81,7 +84,8 @@ function Privacy() {
       <H>1. Who is responsible</H>
       <P>
         The <b>school and teacher</b> who keep a class are the personal information controller for that class's learner records. The app
-        processes those records on their behalf, only to provide the class record. For questions about the app, contact <Contact />.
+        processes those records on their behalf, only to provide the class record. The app is operated by {BUSINESS}. Its Data Protection
+        Officer is {DPO}. For questions about the app, contact <Contact />.
       </P>
 
       <H>2. What information is collected</H>
@@ -141,7 +145,7 @@ function Privacy() {
       <P>Parents and guardians should first contact the learner's teacher or school, which keeps the records. Teachers can contact <Contact />.</P>
 
       <H>9. Data breaches</H>
-      <P>If a breach affecting personal information is discovered, affected users and the National Privacy Commission will be notified as required by law.</P>
+      <P>If a breach puts personal information at real risk of harm, the affected teachers and the National Privacy Commission are notified within 72 hours of learning of it, as the Data Privacy Act requires, so that schools can inform the learners' parents or guardians.</P>
 
       <H>10. Changes to this notice</H>
       <P>This notice may be updated as the app changes. The date below shows the latest version.</P>
