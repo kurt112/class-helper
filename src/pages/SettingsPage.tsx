@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { classLabel, useStore } from '../store';
+import { Link } from 'react-router-dom';
+import { PRO_PRICE, classLabel, useStore } from '../store';
 import { Empty, Page } from '../ui';
 
 // Chrome/Edge fire this once at page load, before Settings opens, so catch it at module load.
@@ -7,7 +8,7 @@ let installPrompt: (Event & { prompt: () => Promise<void> }) | null = null;
 addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installPrompt = e as typeof installPrompt; });
 
 export default function SettingsPage() {
-  const { classes, archiveYear } = useStore();
+  const { classes, archiveYear, pro, proUntil, isAdmin } = useStore();
   const [done, setDone] = useState('');
   const [canInstall, setCanInstall] = useState(!!installPrompt);
   const installed = matchMedia('(display-mode: standalone)').matches;
@@ -68,6 +69,17 @@ export default function SettingsPage() {
       </section>
 
       <section className="section mt-6 max-w-3xl">
+        <div className="section-head"><h2 className="font-bold">Plan</h2></div>
+        <div className="flex flex-wrap items-center gap-3 px-5 py-4">
+          <p className="min-w-0 flex-1 text-sm text-muted">
+            {isAdmin ? 'Administrator account.' : pro ? `Pro, until ${proUntil}.` : `Free plan. Pro is ${PRO_PRICE} per school year, paid in cash.`}
+          </p>
+          <Link className="btn-ghost" to="/pro">{pro ? 'View plan' : 'Get Pro'}</Link>
+          {isAdmin && <Link className="btn-primary" to="/admin">Admin</Link>}
+        </div>
+      </section>
+
+      <section className="section mt-6 max-w-3xl">
         <div className="section-head"><h2 className="font-bold">Install on this computer</h2></div>
         <div className="flex flex-wrap items-center gap-3 px-5 py-4">
           <p className="min-w-0 flex-1 text-sm text-muted">
@@ -84,7 +96,7 @@ export default function SettingsPage() {
       <section className="section mt-6 max-w-3xl">
         <div className="section-head"><h2 className="font-bold">About</h2></div>
         <p className="px-5 py-4 text-sm text-muted">
-          Elementary Class Record is a free tool for educational use. It is not an official DepEd system. See the{' '}
+          Elementary Class Record is free to use, with an optional paid Pro plan. It is not an official DepEd system. See the{' '}
           <a className="font-bold text-board underline-offset-2 hover:underline" href="/guide">Guide</a> for how to use every feature, and read the{' '}
           <a className="font-bold text-board underline-offset-2 hover:underline" href="/terms">Terms and Conditions</a> and the{' '}
           <a className="font-bold text-board underline-offset-2 hover:underline" href="/privacy">Data Privacy Notice</a>.

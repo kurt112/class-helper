@@ -1,4 +1,4 @@
-import { BrowserRouter, NavLink, Redirect, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, NavLink, Redirect, Route, Switch, useHistory } from 'react-router-dom';
 import { useState } from 'react';
 import { GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { auth } from './firebase';
@@ -12,6 +12,7 @@ import SettingsPage from './pages/SettingsPage';
 import LegalPage from './pages/LegalPage';
 import GuidePage from './pages/GuidePage';
 import LandingPage from './pages/LandingPage';
+import { AdminPage, ProPage } from './pages/ProPage';
 import './app.css';
 
 const icon = (d: string) => (
@@ -84,14 +85,17 @@ function SignIn() {
 
 /** Which class you're working on; "+ New class" adds one. */
 function ClassSwitcher() {
-  const { classes, classId, selectClass, createClass } = useStore();
+  const { classes, classId, selectClass, createClass, pro } = useStore();
+  const history = useHistory();
+  // Free plan: one active class. Archived classes stay open to everyone.
+  const newClass = () => (pro || !classes.some((c) => !c.info.archived) ? void createClass() : history.push('/pro'));
   return (
     <select
       aria-label="Class" className="field font-bold" value={classId ?? ''}
-      onChange={(e) => (e.target.value === '+new' ? void createClass() : selectClass(e.target.value))}
+      onChange={(e) => (e.target.value === '+new' ? newClass() : selectClass(e.target.value))}
     >
       {classes.filter((c) => !c.info.archived).map((c) => <option key={c.id} value={c.id}>{classLabel(c.info)}</option>)}
-      <option value="+new">+ New class</option>
+      <option value="+new">+ New class{pro ? '' : ' (Pro)'}</option>
       {classes.some((c) => c.info.archived) && (
         <optgroup label="Archived">
           {classes.filter((c) => c.info.archived).map((c) => <option key={c.id} value={c.id}>{classLabel(c.info)}</option>)}
@@ -102,7 +106,7 @@ function ClassSwitcher() {
 }
 
 export default function App() {
-  const { user } = useStore();
+  const { user, pro, isAdmin } = useStore();
   // Terms and privacy can be read before signing in.
   const legal = location.pathname.match(/^\/(terms|privacy)\/?$/)?.[1] as 'terms' | 'privacy' | undefined;
   if (legal) return <LegalPage doc={legal} />;
@@ -126,6 +130,10 @@ export default function App() {
           {user && <div className="hidden md:absolute md:inset-x-0 md:bottom-0 md:block md:border-t md:border-line md:p-4">
             <p className="truncate text-[13px] font-bold">{user.displayName ?? 'Teacher'}</p>
             <p className="truncate text-[13px] text-muted">{user.email}</p>
+            <p className="mt-2 flex gap-3 text-[13px] font-bold">
+              <NavLink to="/pro" className="text-board hover:underline">{pro ? 'Pro plan' : 'Free plan · Get Pro'}</NavLink>
+              {isAdmin && <NavLink to="/admin" className="text-board hover:underline">Admin</NavLink>}
+            </p>
             <button className="btn-ghost mt-3 w-full" onClick={() => signOut(auth)}>Sign out</button>
           </div>}
           <ul className="grid grid-cols-7 md:block md:space-y-1 md:px-3">
@@ -153,6 +161,8 @@ export default function App() {
             <Route exact path="/forms" component={PrintMenu} />
             <Route exact path="/settings" component={SettingsPage} />
             <Route exact path="/guide" component={GuidePage} />
+            <Route exact path="/pro" component={ProPage} />
+            <Route exact path="/admin" component={AdminPage} />
             <Redirect to="/class" />
           </Switch>
         </main>

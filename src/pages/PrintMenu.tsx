@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useStore } from '../store';
 import { SUBJECTS, TERMS, ratingKey } from '../types';
 import { Page } from '../ui';
+import { ProLink } from './ProPage';
 import templateUrl from '../assets/ecr-template.xlsx?url';
 import { listTemplates, pickTemplate } from '../lib/templates';
 import type { Template } from '../lib/templates';
@@ -17,7 +18,7 @@ const fileName = (section: string, year: string) =>
   `Grade-1-ECR-PACE-Form-and-SF9${[section, year].filter(Boolean).map((s) => `-${s}`).join('')}.xlsx`.replace(/[^\w.-]+/g, '-');
 
 export default function PrintMenu() {
-  const { info, learners, classes, classLearners } = useStore();
+  const { info, learners, classes, classLearners, pro } = useStore();
   const [id, setId] = useState('all');
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<{ text: string; error?: boolean } | null>(null);
@@ -152,11 +153,11 @@ export default function PrintMenu() {
             <button className="btn-primary" disabled={busy || !learners.length || tooMany.length > 0} onClick={exportXlsx}>
               {busy ? 'Creating workbook…' : 'Download Excel workbook'}
             </button>
-            {current.length > 1 && (
+            {current.length > 1 && (pro ? (
               <button className="btn-ghost" disabled={busy} onClick={exportAll}>
                 Download all {current.length} current classes (.zip)
               </button>
-            )}
+            ) : <ProLink>Download all {current.length} classes (.zip)</ProLink>)}
             {progress.some((p) => p.pct < 100) && learners.length > 0 && (
               <span className="text-[13px] text-muted">Unrated competencies are left blank in the workbook.</span>
             )}
@@ -167,7 +168,12 @@ export default function PrintMenu() {
         </div>
       </section>
 
-      <TemplateSettings templates={templates} inUse={inUse} schoolYear={info.schoolYear} onChange={loadTemplates} />
+      {pro ? <TemplateSettings templates={templates} inUse={inUse} schoolYear={info.schoolYear} onChange={loadTemplates} /> : (
+        <section className="section mt-6 flex flex-wrap items-center gap-3 p-5">
+          <p className="min-w-0 flex-1 text-sm text-muted"><b className="text-ink">Templates</b>: use a new DepEd form version for chosen school years.</p>
+          <ProLink>Add templates</ProLink>
+        </section>
+      )}
     </Page>
   );
 }

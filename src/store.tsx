@@ -12,6 +12,12 @@ export interface ClassSummary { id: string; info: ClassInfo }
 
 interface Store {
   user: User | null | undefined; // undefined = still checking
+  /** Paid Pro plan active (licenses/{email} set by the admin, not past its end date). */
+  pro: boolean;
+  /** Pro ends on this date (YYYY-MM-DD), if a license exists */
+  proUntil: string | undefined;
+  /** The admin account, which activates Pro for teachers who paid */
+  isAdmin: boolean;
   /** Every class this teacher has, and the one being worked on */
   classes: ClassSummary[];
   classId: string | undefined;
@@ -48,6 +54,12 @@ export const useStore = () => useContext(Ctx)!;
 // needs its open block back.
 export const AUTH_DISABLED = false;
 
+/** Activates Pro for teachers; must match isAdmin() in firestore.rules. */
+export const ADMIN_EMAIL = 'designscribe.solution@gmail.com';
+export const PRO_PRICE = '₱249';
+/** Today as YYYY-MM-DD in local time, to compare with license end dates. */
+export const today = () => new Date().toLocaleDateString('en-CA');
+
 /** Short name for the class switcher, e.g. "ROSE (2026-27)". */
 export const classLabel = (i: ClassInfo) =>
   `${i.section.trim() || 'No section'} (${(i.schoolYear || 'no SY').replace(/^(\d{4})-\d\d(\d\d)$/, '$1-$2')})`;
@@ -65,6 +77,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const [info, setInfo] = useState<ClassInfo>(DEFAULT_INFO);
   const [learners, setLearners] = useState<Learner[]>([]);
   const [loaded, setLoaded] = useState(false);
+  const [proUntil, setProUntil] = useState<string>();
 
   useEffect(() => (AUTH_DISABLED ? undefined : onAuthStateChanged(auth, setUser)), []);
   const owner = AUTH_DISABLED ? undefined : user?.uid;
@@ -83,6 +96,15 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       setClasses(list.sort((a, b) => classLabel(a.info).localeCompare(classLabel(b.info))));
     });
   }, [firstId, owner]);
+
+  const email = user?.email?.toLowerCase();
+  useEffect(() => {
+    setProUntil(undefined);
+    if (!email) return;
+    return onSnapshot(doc(db, 'licenses', email), (s) => setProUntil(s.data()?.until), () => setProUntil(undefined));
+  }, [email]);
+  const isAdmin = !!user?.emailVerified && email === ADMIN_EMAIL;
+  const pro = AUTH_DISABLED || isAdmin || (!!proUntil && proUntil >= today());
 
   const classId = classes.some((c) => c.id === chosen) ? chosen : classes[0]?.id;
 
@@ -104,7 +126,7 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const selectClass = (id: string) => (setChosen(id), remember(id));
 
   const store: Store = {
-    user, classes, classId, selectClass, info, learners, loaded,
+    user, pro, proUntil, isAdmin, classes, classId, selectClass, info, learners, loaded,
     async createClass() {
       const ref = doc(collection(db, 'classes'));
       await setDoc(ref, { ...nextClassInfo(info), ...ownerField });

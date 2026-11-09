@@ -16,5 +16,17 @@ service cloud.firestore {
     match /classes/{cls}/learners/{learner} {
       allow read, write: if owns(cls);
     }
+    // Pro licenses, keyed by the teacher's lowercase Google email. Only the admin (verified Google account)
+    // can create, change or remove one; teachers can only read their own. The admin never gets class data.
+    function isAdmin() {
+      return signedIn() && request.auth.token.email == 'designscribe.solution@gmail.com' && request.auth.token.email_verified == true;
+    }
+    match /licenses/{email} {
+      allow read: if isAdmin() || (signedIn() && request.auth.token.email.lower() == email);
+      allow write: if isAdmin()
+        && request.resource.data.keys().hasOnly(['until', 'amount', 'note', 'activatedAt'])
+        && request.resource.data.until is string && request.resource.data.until.matches('^\\d{4}-\\d{2}-\\d{2}$');
+      allow delete: if isAdmin();
+    }
   }
 }

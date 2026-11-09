@@ -4,3 +4,6 @@ dist
 *.xlsx
 desktop/node_modules
 desktop/dist
+firestore-debug.log
+.DS_Store
+tsconfig.tsbuildinfo

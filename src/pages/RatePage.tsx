@@ -4,6 +4,7 @@ import { mean, meanLetter, randomFill } from '../lib/randomFill';
 import { LETTERS, LEVELS, SKILLS, SKILL_COLORS, SUBJECTS, TERMS, ratingKey } from '../types';
 import type { Item, Letter, Term } from '../types';
 import { Choice, Empty, LearnerPicker, Page } from '../ui';
+import { ProLink } from './ProPage';
 
 export const itemLabel = (it: Item) => `${it.no}${it.text.match(/^([a-z])\./)?.[1] ?? ''}`;
 export const itemTitle = (it: Item) => [it.parent, it.text, it.skill && `(${SKILLS[it.skill]})`].filter(Boolean).join(' ');
@@ -14,7 +15,7 @@ const skillStyle = (it: Item) => (it.skill ? { background: SKILL_COLORS[it.skill
 const cell = 'h-8 w-10 cursor-pointer appearance-none rounded-md border text-center text-sm font-bold focus:border-board focus:outline-none focus:ring-2 focus:ring-board/30';
 
 export default function RatePage() {
-  const { learners, setField, setRatings } = useStore();
+  const { learners, setField, setRatings, pro } = useStore();
   const [subjectId, setSubjectId] = useState(SUBJECTS[0].id);
   const [term, setTerm] = useState<Term>('1');
   const [strand, setStrand] = useState<string | null>(null); // null = not picked; '' is a real (unnamed) strand
@@ -91,7 +92,9 @@ export default function RatePage() {
   return (
     <Page
       title="Rate" hint="Pick A–E for each learner and competency."
-      actions={learners.length > 0 && <button className={fillOpen ? 'btn-primary' : 'btn-ghost'} aria-expanded={fillOpen} onClick={() => setFillOpen(!fillOpen)}>Random fill</button>}
+      actions={learners.length > 0 && (pro
+        ? <button className={fillOpen ? 'btn-primary' : 'btn-ghost'} aria-expanded={fillOpen} onClick={() => setFillOpen(!fillOpen)}>Random fill</button>
+        : <ProLink>Random fill</ProLink>)}
     >
       {fillOpen && l && (
         <section className="section mb-6 p-4">
@@ -212,7 +215,7 @@ export default function RatePage() {
                   <span className="text-muted">Target average</span>
                   <Choice label="Target average for ticked learners" value={target} options={LETTERS.map((x) => ({ value: x, label: x }))} onChange={setTarget} />
                   <span className="text-muted">{LEVELS.find(([k]) => k === target)?.[1]}</span>
-                  <button className="btn-primary" onClick={rerateTicked}>Re-rate {ticked.length} to {target}</button>
+                  {pro ? <button className="btn-primary" onClick={rerateTicked}>Re-rate {ticked.length} to {target}</button> : <ProLink>Re-rate {ticked.length} to {target}</ProLink>}
                   <button className="font-bold text-muted hover:text-ink" onClick={() => setTicked([])}>Clear</button>
                 </>
               ) : (

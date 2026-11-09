@@ -25,8 +25,8 @@ function Terms() {
 
       <H>1. What the app is</H>
       <P>
-        A free tool for Grade 1 teachers in the Philippines to keep the Electronic Class Record (ECR), the PACE form and the SF9 report card,
-        made for educational, non-commercial purposes. It is <b>not an official system of the Department of Education (DepEd)</b> and is not
+        A tool for Grade 1 teachers in the Philippines to keep the Electronic Class Record (ECR), the PACE form and the SF9 report card,
+        made for educational use. Using it is free; an optional paid Pro plan adds features (see section 6). It is <b>not an official system of the Department of Education (DepEd)</b> and is not
         endorsed by DepEd. The official forms and DepEd policies always take precedence.
       </P>
 
@@ -52,22 +52,34 @@ function Terms() {
       <H>5. Acceptable use</H>
       <P>Do not use the app to store information unrelated to class records, to access other teachers' classes, to disrupt the service, or for any unlawful purpose.</P>
 
-      <H>6. No warranty</H>
+      <H>6. Pro plan and payment</H>
+      <div id="pro" className="scroll-mt-6" />
+      <L items={[
+        <>Pro costs <b>₱249 per school year</b> per teacher, paid <b>in cash, in person</b>, to the app administrator. The app never asks for payment online, by text message or through other people.</>,
+        'Ask for an acknowledgement receipt when you pay. Pro is activated for the Google email you give, usually the same day, and lasts until the end date shown on your Pro page (normally July 31, the end of the school year).',
+        'Pro does not renew by itself. When it ends, the app goes back to the free plan: nothing is deleted, and all your classes, including extra ones, can still be opened, printed and exported.',
+        <>Refunds: if Pro was not activated, or you ask within <b>7 days</b> of activation, you get your money back in full. After that, payments are not refundable, except where the law requires.</>,
+        'If the app stops being offered before your Pro end date, the unused part of your payment is refunded, in proportion to the months left.',
+        'Prices may change for future school years; a change never affects a period you already paid for.',
+        'Pro is for the teacher who paid and cannot be shared or transferred.',
+      ]} />
+
+      <H>7. No warranty</H>
       <P>
-        The app is provided "as is", free of charge, without any guarantee that it is error-free or always available. Changes made offline
+        The app is provided "as is", without any guarantee that it is error-free or always available. Changes made offline
         are saved when your device reconnects. Exported files are generated from the official workbook layout; check them before submitting.
       </P>
 
-      <H>7. Limitation of liability</H>
-      <P>To the extent allowed by law, the app's operators are not liable for lost data, wrong ratings or other damages arising from the use of the app. Keep backups of important records.</P>
+      <H>8. Limitation of liability</H>
+      <P>To the extent allowed by law, the app's operators are not liable for lost data, wrong ratings or other damages arising from the use of the app, and their total liability to you is limited to the amount you paid for Pro in the last 12 months. Keep backups of important records.</P>
 
-      <H>8. Ending use</H>
+      <H>9. Ending use</H>
       <P>You may stop using the app at any time. Deleting a class removes it and its learners from the database. To have your account and all your classes removed, contact <Contact />.</P>
 
-      <H>9. Changes</H>
+      <H>10. Changes</H>
       <P>These terms may be updated. The date below shows the latest version; continuing to use the app after a change means you accept it.</P>
 
-      <H>10. Governing law and contact</H>
+      <H>11. Governing law and contact</H>
       <P>These terms are governed by the laws of the Republic of the Philippines, and any dispute will be brought before the proper courts of the Philippines. Questions: <Contact />.</P>
     </>
   );
@@ -93,6 +105,7 @@ function Privacy() {
         <><b>Teacher account:</b> your name, email address, profile photo and account ID, from Google Sign-In.</>,
         <><b>Learner records you enter:</b> name, LRN, sex and birthdate; ratings for each competency; teacher comments; days present.</>,
         <><b>School details you enter:</b> region, division, district, school name and ID, school head, adviser, section, school year and class days.</>,
+        <><b>Pro plan record:</b> if you buy Pro, your email, the Pro end date, the amount paid and a short note (such as the receipt number or your school), entered by the administrator.</>,
         <><b>Templates you upload:</b> Excel workbooks used for export. Learner data inside an uploaded workbook is removed before it is saved.</>,
       ]} />
       <P>The app does <b>not</b> collect location, contacts or browsing activity. It has <b>no advertising, no analytics or tracking</b>, and it does not sell or rent any information.</P>
@@ -115,7 +128,7 @@ function Privacy() {
       <L items={[
         'Only the teacher signed in with the account that owns a class can open it. Other teachers cannot see your classes.',
         'Google, as the hosting and sign-in provider, processes the data to run the service, under its own security and privacy commitments.',
-        'The app administrator can technically access the database for maintenance, and does so only to provide support you ask for or when required by law.',
+        'The app administrator sees Pro plan records to activate Pro. The administrator can technically access the database for maintenance, and does so only to provide support you ask for or when required by law.',
         'Records are not shared with anyone else unless required by law. Sharing exported files is your decision and responsibility.',
       ]} />
 
@@ -129,7 +142,8 @@ function Privacy() {
       <P>
         Records stay until you delete them. Archiving a class keeps it for your records. Deleting a class permanently removes it and its learners
         from the online database; copies kept in a browser are removed when that browser's site data is cleared. Keep records for as long as your
-        school and DepEd require, and delete them when they are no longer needed.
+        school and DepEd require, and delete them when they are no longer needed. Pro plan records are kept as long as tax and
+        accounting rules require, even after Pro ends.
       </P>
 
       <H>8. Your rights</H>
@@ -156,7 +170,7 @@ function Privacy() {
 /** Terms and Conditions (/terms) and Data Privacy Notice (/privacy); readable without signing in. */
 export default function LegalPage({ doc }: { doc: 'terms' | 'privacy' }) {
   return (
-    <Page title={doc === 'terms' ? 'Terms and Conditions' : 'Data Privacy Notice'} hint={`Last updated ${UPDATED}. For educational, non-commercial use.`}>
+    <Page title={doc === 'terms' ? 'Terms and Conditions' : 'Data Privacy Notice'} hint={`Last updated ${UPDATED}. For educational use.`}>
       <article className="section max-w-3xl px-6 pt-2 pb-8 leading-relaxed">
         {doc === 'terms' ? <Terms /> : <Privacy />}
         <p className="mt-10 border-t border-line pt-4 text-sm text-muted">
