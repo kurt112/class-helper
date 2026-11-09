@@ -2,9 +2,21 @@ import { useState } from 'react';
 import { classLabel, useStore } from '../store';
 import { Empty, Page } from '../ui';
 
+// Chrome/Edge fire this once at page load, before Settings opens, so catch it at module load.
+let installPrompt: (Event & { prompt: () => Promise<void> }) | null = null;
+addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installPrompt = e as typeof installPrompt; });
+
 export default function SettingsPage() {
   const { classes, archiveYear } = useStore();
   const [done, setDone] = useState('');
+  const [canInstall, setCanInstall] = useState(!!installPrompt);
+  const installed = matchMedia('(display-mode: standalone)').matches;
+
+  async function install() {
+    await installPrompt?.prompt();
+    installPrompt = null;
+    setCanInstall(false);
+  }
 
   // School years, newest first, with their active and archived classes.
   const years = [...new Set(classes.map((c) => c.info.schoolYear || 'No school year'))].sort().reverse().map((year) => ({
@@ -53,6 +65,20 @@ export default function SettingsPage() {
         <p aria-live="polite" className="px-5 pb-4 empty:hidden">
           {done && <span className="block rounded-lg bg-board-soft px-4 py-2.5 text-sm font-bold text-board-dark">{done}</span>}
         </p>
+      </section>
+
+      <section className="section mt-6 max-w-3xl">
+        <div className="section-head"><h2 className="font-bold">Install on this computer</h2></div>
+        <div className="flex flex-wrap items-center gap-3 px-5 py-4">
+          <p className="min-w-0 flex-1 text-sm text-muted">
+            {installed
+              ? 'You are using the installed app.'
+              : canInstall
+                ? 'Add Elementary Class Record to your desktop or dock. It opens in its own window and works offline.'
+                : 'In Chrome or Edge, click the install icon at the right of the address bar. In Safari, choose File › Add to Dock. On a phone, use Add to Home Screen.'}
+          </p>
+          {canInstall && !installed && <button className="btn-primary" onClick={install}>Install app</button>}
+        </div>
       </section>
 
       <section className="section mt-6 max-w-3xl">
