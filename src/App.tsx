@@ -49,6 +49,10 @@ function SignIn() {
   return (
     <main className="grid min-h-dvh place-items-center px-4">
       <div className="w-full max-w-sm">
+        <a href="/" className="mb-8 inline-flex items-center gap-1.5 text-sm font-bold text-muted hover:text-board">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className="size-4" aria-hidden><path d="M15 18l-6-6 6-6" /></svg>
+          Back to home
+        </a>
         <div className="mb-6 grid size-12 place-items-center rounded-xl bg-board text-on-board">{icon('M4 20h4L19 9a2.8 2.8 0 0 0-4-4L4 16v4M13.5 6.5l4 4')}</div>
         <h1 className="text-3xl font-bold tracking-tight">Elementary Class Record</h1>
         <p className="mt-2 text-muted">ECR, PACE and SF9 for your class in one place. Works offline once you've signed in.</p>
